@@ -29,7 +29,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-10">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-25 text-2xl">
           {/* Left: Logo */}

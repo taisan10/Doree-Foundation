@@ -1,4 +1,6 @@
+// tailwind.config.js
 module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"], // apne project ke paths
   theme: {
     extend: {
       keyframes: {
@@ -13,4 +15,5 @@ module.exports = {
       },
     },
   },
+  plugins: [],
 };
