@@ -13,7 +13,7 @@ export function Home(){
       <ChildrenSupportSection />
       <WhatWeDoSection />
       <SkillDevelopmentSection />
-      {/* <FieldsOfWorkSection /> */}
+      <FieldsOfWorkSection />
     </div>
   )
 }

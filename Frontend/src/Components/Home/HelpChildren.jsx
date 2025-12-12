@@ -7,37 +7,36 @@ import {  PrimaryButton } from "./../UI/UiComponent";
 const images = [
    {
       img: "/HeroSection/Hero1.png",
-      title: "SUPPORT CHILDREN’S EDUCATION",
-      subtitle: "Help them stay in school",
+      title: "बच्चों की शिक्षा का समर्थन करें",
+      subtitle: "उन्हें स्कूल में बनाए रखने में मदद करें",
     },
     
     {
       img: "/HeroSection/Hero3.png",
-      title: "Send Children Back to School",
-      subtitle: "Support their learning journey",
+      title: "बच्चों को वापस स्कूल भेजें",
+      subtitle: "उनकी सीखने की यात्रा का समर्थन करें",
     },
     {
       img: "/HeroSection/Hero4.png",
-      title: "Umeed Ki Ek Dor",
-      subtitle: "Give hope and opportunities",
+      title: "उम्मीद की एक डोर",
+      subtitle: "आशा और अवसर प्रदान करें",
     },
     {
       img: "/HeroSection/Hero5.png",
-      title: "Bright Future for Kids",
-      subtitle: "Create lasting impact",
+      title: "बच्चों के लिए उज्ज्वल भविष्य",
+      subtitle: "स्थायी प्रभाव पैदा करें",
     },
     {
       img: "/HeroSection/Hero6.png",
-      title: "Empower Young Minds",
-      subtitle: "Strengthen their education",
+      title: "युवा दिमागों को सशक्त करें",
+      subtitle: "उनकी शिक्षा को मजबूत करें",
     },
     {
       img: "/HeroSection/Hero2.png",
-      title: "Poori Padhai, Desh Ki Bhalai",
-      subtitle: "Help girls complete their education",
+      title: "पूरी पढ़ाई, देश की भलाई",
+      subtitle: "लड़कियों को अपनी शिक्षा पूरी करने में मदद करें",
     },
 ];
-
 export default function ChildrenSupportSection() {
   const [index, setIndex] = useState(0);
 
@@ -58,21 +57,20 @@ export default function ChildrenSupportSection() {
       <div className="grid grid-cols-1 lg:grid-cols-4   gap-10">
 
         {/* LEFT SIDE – 25% */}
-        <div className="col-span-1 lg:pr-6 lg:-mr-50 lg:mt-20 ">
-          <h3 className="text-3xl font-bold text-gray-900">
-            How do you want to help children today?
-          </h3>
+       <div className="col-span-1 lg:pr-6 lg:-mr-50 lg:mt-20 ">
+  <h3 className="text-3xl font-bold text-gray-900">
+    आज आप <span className="text-orange-500 font-extrabold" >बच्चों की मदद </span> कैसे करना चाहेंगे?
+  </h3>
 
-          <p className="text-gray-600 text-lg mt-4 leading-relaxed">
-            Your smallest contribution makes a big difference to children’s lives.
-            We count on the generosity of people like you to be able to create
-            real change for India’s children!
-          </p>
+  <p className="text-gray-600 text-lg mt-4 leading-relaxed">
+    आपका छोटा सा योगदान भी बच्चों की ज़िंदगी में बड़ा बदलाव ला सकता है।
+    भारत के बच्चों के लिए वास्तविक परिवर्तन लाने में हम आपके जैसे उदार लोगों पर भरोसा करते हैं!
+  </p>
 
-          <PrimaryButton className="mt-6  text-white px-6 py-4 rounded-lg font-semibold shadow-md rounded-full">
-            Donate For Happier Childhoods!
-          </PrimaryButton>
-        </div>
+  <PrimaryButton className="mt-6 text-white px-6 py-4 rounded-lg font-semibold shadow-md rounded-full">
+    बच्चों के उज्ज्वल भविष्य के लिए सहयोग करें
+  </PrimaryButton>
+</div>
 
         {/* RIGHT SIDE – 75% */}
         <div className="col-span-1 lg:col-span-3 lg:ml-60 relative">

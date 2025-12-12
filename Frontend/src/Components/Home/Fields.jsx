@@ -1,62 +1,62 @@
 import { useState } from "react";
 import { PrimaryButton } from "../UI/UiComponent";
-
 const fields = [
   {
-    title: "Education",
+    title: "शिक्षा",
     icon: "/Icons/Education.png",
     image: "/HeroSection/Hero1.png",
-    headline: "Shiksha Ki Raksha, Bhavishya Ki Raksha!",
+    headline: "शिक्षा की रक्षा, भविष्य की रक्षा!",
     description:
-      "From early childhood to adolescence, quality education unlocks human potential. Safe classrooms, girls’ participation, digital access — our interventions remove barriers across India.",
-    button: "Know More",
+      "प्रारंभिक बचपन से किशोरावस्था तक, गुणवत्तापूर्ण शिक्षा मानव क्षमता को उजागर करती है। सुरक्षित कक्षाएँ, लड़कियों की भागीदारी, डिजिटल पहुँच — हमारे हस्तक्षेप पूरे भारत में बाधाओं को दूर करते हैं।",
+    button: "और जानें",
   },
   {
-    title: "Health",
+    title: "स्वास्थ्य",
     icon: "/Icons/Health.png",
     image: "/HeroSection/Hero3.png",
-    headline: "Arogya Ki Raksha, Bhavishya Ki Raksha!",
+    headline: "आरोग्य की रक्षा, भविष्य की रक्षा!",
     description:
-      "We guarantee healthcare and nutrition for children through awareness drives, system strengthening, and partnerships with Health Ministry and NITI Aayog.",
-    button: "Know More",
+      "हम बच्चों के लिए स्वास्थ्य और पोषण की गारंटी जागरूकता अभियानों, प्रणाली सुदृढ़ीकरण और स्वास्थ्य मंत्रालय व नीति आयोग के साथ साझेदारी के माध्यम से देते हैं।",
+    button: "और जानें",
   },
   {
-    title: "Resilience",
+    title: "लचीलापन",
     icon: "/Icons/Resilience.png",
     image: "/HeroSection/Hero4.png",
-    headline: "Building Resilience for Tomorrow",
+    headline: "कल के लिए लचीलापन निर्माण",
     description:
-      "Empowering children and communities to adapt and thrive through climate awareness, disaster preparedness, and emotional strength.",
-    button: "Know More",
+      "बच्चों और समुदायों को जलवायु जागरूकता, आपदा तैयारी और भावनात्मक शक्ति के माध्यम से अनुकूलन और प्रगति करने के लिए सशक्त बनाना।",
+    button: "और जानें",
   },
   {
-    title: "Livelihood",
+    title: "जीविका",
     icon: "/Icons/Livelihood.png",
     image: "/HeroSection/Hero5.png",
-    headline: "Securing Livelihoods for Families",
+    headline: "परिवारों के लिए आजीविका सुनिश्चित करना",
     description:
-      "Skill development, vocational training, and placement support to uplift families and ensure sustainable income.",
-    button: "Know More",
+      "कौशल विकास, व्यावसायिक प्रशिक्षण और नियुक्ति सहयोग के माध्यम से परिवारों को ऊपर उठाना और सतत आय सुनिश्चित करना।",
+    button: "और जानें",
   },
   {
-    title: "Protection",
+    title: "संरक्षण",
     icon: "/Icons/Security.png",
     image: "/HeroSection/Hero6.png",
-    headline: "Safety and Protection for Every Child",
+    headline: "हर बच्चे के लिए सुरक्षा और संरक्षण",
     description:
-      "We create safe spaces, prevent abuse, and advocate for child rights through legal and community-based interventions.",
-    button: "Know More",
+      "हम सुरक्षित स्थान बनाते हैं, दुर्व्यवहार रोकते हैं और कानूनी व सामुदायिक हस्तक्षेपों के माध्यम से बाल अधिकारों की वकालत करते हैं।",
+    button: "और जानें",
   },
   {
-    title: "Humanitarian",
+    title: "मानवीय सहायता",
     icon: "/Icons/Human.png",
     image: "/HeroSection/Hero2.png",
-    headline: "Humanitarian Aid with Dignity",
+    headline: "गरिमा के साथ मानवीय सहायता",
     description:
-      "Rapid response during emergencies — food, shelter, education continuity — with dignity and care.",
-    button: "Know More",
+      "आपात स्थितियों के दौरान त्वरित प्रतिक्रिया — भोजन, आश्रय, शिक्षा की निरंतरता — गरिमा और देखभाल के साथ।",
+    button: "और जानें",
   },
 ];
+
 
 export default function FieldsOfWorkSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -68,7 +68,7 @@ export default function FieldsOfWorkSection() {
       </h2>
 
       {/* Subtitle Icons */}
-      <div className="flex flex-wrap justify-center gap-6 mb-10 relative">
+      <div className="flex flex-wrap justify-center gap-26 mb-10 relative">
         {fields.map((field, index) => (
           <div
             key={index}
@@ -78,7 +78,7 @@ export default function FieldsOfWorkSection() {
             <img
               src={field.icon}
               alt={field.title}
-              className="w-16 h-16 mb-2 transition-transform group-hover:scale-110"
+              className="w-24 h-24 mb-2 transition-transform group-hover:scale-110"
             />
             <span className="text-sm font-medium text-gray-700">
               {field.title}

@@ -97,60 +97,59 @@ import { PrimaryButton } from "../UI/UiComponent";
 
 const cardData = [
   {
-    title: "Education",
+    title: "शिक्षा",
     gif: "/GIf/Education.png",
     description:
-      "Ensuring that children go to school and complete their education.",
-    button: "Read More",
+      "सुनिश्चित करना कि बच्चे स्कूल जाएँ और अपनी शिक्षा पूरी करें।",
+    button: "और पढ़ें",
     borderColor: "border-pink-500",
   },
   {
-    title: "Health & Nutrition",
+    title: "स्वास्थ्य और पोषण",
     gif: "/GIf/Health.png",
     description:
-      "Providing nutritious meals and health support to growing children.",
-    button: "Read More",
+      "बढ़ते बच्चों को पौष्टिक भोजन और स्वास्थ्य सहयोग प्रदान करना।",
+    button: "और पढ़ें",
     borderColor: "border-green-500",
   },
   {
-    title: "Safety & Protection",
+    title: "सुरक्षा और संरक्षण",
     gif: "/GIf/Safety1.png",
     description:
-      "Creating safe environments and protecting children from harm.",
-    button: "Read More",
+      "सुरक्षित वातावरण बनाना और बच्चों को हानि से बचाना।",
+    button: "और पढ़ें",
     borderColor: "border-blue-500",
   },
   {
-    title: "Child Participation",
+    title: "बच्चों की भागीदारी",
     gif: "/GIf/Children.png",
     description:
-      "Empowering children to express themselves and be part of decisions.",
-    button: "Read More",
+      "बच्चों को स्वयं को व्यक्त करने और निर्णयों का हिस्सा बनने के लिए सशक्त करना।",
+    button: "और पढ़ें",
     borderColor: "border-yellow-500",
   },
 ];
-
 export default function WhatWeDoSection() {
   return (
     <section className="bg-orange-100 py-12 px-6 lg:px-20">
       <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-        What We Do
+     हम क्या करते हैं
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {cardData.map((card, index) => (
           <div
             key={index}
-            className={`group relative bg-white rounded-xl overflow-hidden shadow-lg border-b-4 ${card.borderColor}`}
+            className={`group relative bg-white rounded-xl overflow-hidden shadow-lg border-b-6 ${card.borderColor}`}
           >
             {/* Image + Title */}
             <div className="relative z-10 transition-all duration-500 group-hover:-translate-y-72">
               <img
                 src={card.gif}
                 alt={card.title}
-                className="w-full h-68 object-cover"
+                className="w-full h-75 object-cover"
               />
-              <h3 className="absolute bottom-2 left-4 text-xl  font-semibold text-white bg-black/50 px-3 py-1 rounded">
+              <h3 className="absolute bottom-2 left-4  text-xl   font-semibold text-white bg-black/50 px-3 py-1 rounded">
                 {card.title}
               </h3>
             </div>
