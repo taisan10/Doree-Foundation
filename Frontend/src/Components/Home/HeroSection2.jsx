@@ -4,6 +4,9 @@
 
 import { useState, useEffect } from "react";
 import {  PrimaryButton } from "../UI/UiComponent";
+import { useTranslation } from "react-i18next";
+
+
 
 export default function HeroSection() {
   const images = [
@@ -16,6 +19,8 @@ export default function HeroSection() {
   ];
 
   const [current, setCurrent] = useState(0);
+
+   const { t } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,14 +40,15 @@ export default function HeroSection() {
           <div className="absolute left-0 lg:-left-26  h-15 w-1 bg-orange-400 rounded-full"></div>
 
           <h1 className="text-4xl md:text-3xl lg:text-4xl font-extrabold mb-4 leading-snug text-orange-500 lg:-ml-21">
-            Hope of Rope
+            {t("hero.title")}
           </h1>
 
           <p className="text-2xl lg:text-3xl font-bold text-orange-500 mb-6 lg:-ml-21">
-            उम्मीद की एक डोर
+            {/* उम्मीद की एक डोर */}
+             {t("hero.subtitle")}
           </p>
 
-          <PrimaryButton href="/contact" className="lg:-ml-21" >Yes! I Want to Help</PrimaryButton>
+          <PrimaryButton href="/contact" className="lg:-ml-21" >   {t("hero.cta")}</PrimaryButton>
 
           {/* Scroll indicator */}
       <div className="mt-30 flex flex-col items-center lg:items-start gap-3 text-lg text-gray-600">
@@ -55,7 +61,8 @@ export default function HeroSection() {
 
   {/* Text */}
 <span className="text-gray-700 font-medium tracking-wide text-xl animate-tilt lg:-ml-21">
-  Scroll For More
+  {/* Scroll For More */}
+     {t("hero.scrollText")}
 </span>
 
 

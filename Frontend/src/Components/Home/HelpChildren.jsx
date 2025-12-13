@@ -3,6 +3,7 @@
 import  { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import {  PrimaryButton } from "./../UI/UiComponent";
+import { useTranslation } from "react-i18next";
 
 const images = [
    {
@@ -52,6 +53,8 @@ export default function ChildrenSupportSection() {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <section className="w-full  py-12 px-6 lg:px-12">
       <div className="grid grid-cols-1 lg:grid-cols-4   gap-10">
@@ -59,16 +62,19 @@ export default function ChildrenSupportSection() {
         {/* LEFT SIDE – 25% */}
        <div className="col-span-1 lg:pr-6 lg:-mr-50 lg:mt-20 ">
   <h3 className="text-3xl font-bold text-gray-900">
-    आज आप <span className="text-orange-500 font-extrabold" >बच्चों की मदद </span> कैसे करना चाहेंगे?
+    {/* आज आप <span className="text-orange-500 font-extrabold" >बच्चों की मदद </span> कैसे करना चाहेंगे? */}
+    {t("childrenSupport.headline")}
   </h3>
 
   <p className="text-gray-600 text-lg mt-4 leading-relaxed">
-    आपका छोटा सा योगदान भी बच्चों की ज़िंदगी में बड़ा बदलाव ला सकता है।
-    भारत के बच्चों के लिए वास्तविक परिवर्तन लाने में हम आपके जैसे उदार लोगों पर भरोसा करते हैं!
+    {/* आपका छोटा सा योगदान भी बच्चों की ज़िंदगी में बड़ा बदलाव ला सकता है।
+    भारत के बच्चों के लिए वास्तविक परिवर्तन लाने में हम आपके जैसे उदार लोगों पर भरोसा करते हैं! */}
+    {t("childrenSupport.paragraph")}
   </p>
 
   <PrimaryButton className="mt-6 text-white px-6 py-4 rounded-lg font-semibold shadow-md rounded-full">
-    बच्चों के उज्ज्वल भविष्य के लिए सहयोग करें
+    {/* बच्चों के उज्ज्वल भविष्य के लिए सहयोग करें */}
+    {t("childrenSupport.cta")}
   </PrimaryButton>
 </div>
 

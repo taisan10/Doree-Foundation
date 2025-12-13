@@ -1,6 +1,9 @@
 // src/components/Navbar.jsx
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { Logo, PrimaryButton } from "./../UI/UiComponent";
+import { useRef } from "react";
+
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -10,26 +13,56 @@ export default function Header() {
   // Desktop dropdown states
   const [workDropdown, setWorkDropdown] = useState(false);
   const [doDropdown, setDoDropdown] = useState(false);
-  let workTimer, doTimer;
+// let workTimer, doTimer;
 
-  const handleMouseEnterWork = () => {
-    clearTimeout(workTimer);
-    setWorkDropdown(true);
-  };
-  const handleMouseLeaveWork = () => {
-    workTimer = setTimeout(() => setWorkDropdown(false), 300);
-  };
+ const workTimer = useRef(null);
+const doTimer = useRef(null);
 
-  const handleMouseEnterDo = () => {
-    clearTimeout(doTimer);
-    setDoDropdown(true);
-  };
-  const handleMouseLeaveDo = () => {
-    doTimer = setTimeout(() => setDoDropdown(false), 300);
-  };
 
-  return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-10">
+   
+ 
+  const {t, i18n } = useTranslation();
+
+const changeLanguage = (lang) => {
+  i18n.changeLanguage(lang);
+};
+
+
+
+const handleMouseEnterWork = () => {
+  clearTimeout(workTimer.current);
+  setWorkDropdown(true);
+};
+const handleMouseLeaveWork = () => {
+  workTimer.current = setTimeout(() => setWorkDropdown(false), 300);
+};
+const handleMouseEnterDo = () => {
+  clearTimeout(doTimer);
+  setDoDropdown(true);
+};
+const handleMouseLeaveDo = () => {
+  doTimer = setTimeout(() => setDoDropdown(false), 300);
+};
+
+
+
+
+
+
+return (
+  <nav className="bg-white shadow-md top-0 left-0 w-full z-10">
+      <div className="flex justify-end fixed bg-gray-800 px-4 py-2">
+  <select
+    onChange={(e) => changeLanguage(e.target.value)}
+    className="border bg-gray-800 text-white rounded px-2 py-1 text-sm"
+    >
+    <option value="en">English</option>
+    <option value="hi">हिंदी</option>
+    <option value="mr">मराठी</option>
+<option value="pa">ਪੰਜਾਬੀ</option>
+
+  </select>
+</div>
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-25 text-2xl">
           {/* Left: Logo */}
@@ -37,7 +70,7 @@ export default function Header() {
 
           {/* Center: Menu (Desktop) */}
           <div className="hidden lg:flex space-x-6">
-            <a href="/about" className="text-gray-700 hover:text-orange-500">About</a>
+            <a href="/about" className="text-gray-700 hover:text-orange-500"> {t("navbar.about")}</a>
 
             {/* Our Work dropdown */}
             <div
@@ -45,21 +78,21 @@ export default function Header() {
               onMouseEnter={handleMouseEnterWork}
               onMouseLeave={handleMouseLeaveWork}
             >
-              <button className="text-gray-700 hover:text-orange-500">Our Work</button>
+              <button className="text-gray-700 hover:text-orange-500">{t("navbar.ourWork")}</button>
               {workDropdown && (
                 <div className="absolute bg-white shadow-md rounded-md mt-2 text-xl">
                   <ul className="py-2 w-48">
-                    <li><a href="/work/project1" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Project One</a></li>
-                    <li><a href="/work/project2" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Project Two</a></li>
-                    <li><a href="/work/project3" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Project Three</a></li>
-                    <li><a href="/work/project4" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Project Four</a></li>
-                    <li><a href="/work/project5" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Project Five</a></li>
+                    <li><a href="/work/project1" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project1")}</a></li>
+                    <li><a href="/work/project2" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project2")}</a></li>
+                    <li><a href="/work/project3" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project3")}</a></li>
+                    <li><a href="/work/project4" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project4")}</a></li>
+                    <li><a href="/work/project5" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project5")}</a></li>
                   </ul>
                 </div>
               )}
             </div>
 
-            <a href="/blogs" className="text-gray-700 hover:text-orange-500">Blogs</a>
+            <a href="/blogs" className="text-gray-700 hover:text-orange-500">{t("navbar.blogs")}</a>
 
             {/* What We Do dropdown */}
             <div
@@ -67,15 +100,16 @@ export default function Header() {
               onMouseEnter={handleMouseEnterDo}
               onMouseLeave={handleMouseLeaveDo}
             >
-              <button className="text-gray-700 hover:text-orange-500">What We Do</button>
+              <button className="text-gray-700 hover:text-orange-500">      {t("navbar.Work")}
+</button>
               {doDropdown && (
                 <div className="absolute bg-white shadow-md rounded-md text-xl mt-2">
                   <ul className="py-2 w-48">
-                    <li><a href="/do/service1" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Service One</a></li>
-                    <li><a href="/do/service2" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Service Two</a></li>
-                    <li><a href="/do/service3" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Service Three</a></li>
-                    <li><a href="/do/service4" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Service Four</a></li>
-                    <li><a href="/do/service5" className="block px-4 py-2 text-gray-600 hover:text-orange-500">Service Five</a></li>
+                    <li><a href="/do/service1" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service1")}</a></li>
+                    <li><a href="/do/service2" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service2")}</a></li>
+                    <li><a href="/do/service3" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service3")}</a></li>
+                    <li><a href="/do/service4" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service4")}</a></li>
+                    <li><a href="/do/service5" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service5")}</a></li>
                   </ul>
                 </div>
               )}
@@ -84,7 +118,7 @@ export default function Header() {
 
           {/* Right: Contact Button */}
           <div className="hidden lg:block">
-            <PrimaryButton href="/contact">Contact</PrimaryButton>
+            <PrimaryButton href="/contact">{t("navbar.contact")}</PrimaryButton>
           </div>
 
           {/* Mobile Hamburger */}
@@ -109,8 +143,8 @@ export default function Header() {
       {open && (
         <div className="lg:hidden bg-white shadow-md">
           <ul className="flex flex-col space-y-2 px-4 py-3">
-            <li><a href="/about" className="block text-gray-700 hover:text-orange-500">About</a></li>
-            <li><a href="/blogs" className="block text-gray-700 hover:text-orange-500">Blogs</a></li>
+            <li><a href="/about" className="block text-gray-700 hover:text-orange-500">{t("navbar.about")}</a></li>
+            <li><a href="/blogs" className="block text-gray-700 hover:text-orange-500">{t("navbar.blogs")}</a></li>
            
 
             {/* Our Work children (collapsible) */}
@@ -119,15 +153,15 @@ export default function Header() {
                 onClick={() => setWorkOpen(!workOpen)}
                 className="w-full text-left  text-gray-700 hover:text-orange-500 mt-2"
               >
-                Our Work {workOpen ? "▲" : "▼"}
+             {t("ourWork")} {workOpen ? "▲" : "▼"}
               </button>
               {workOpen && (
                 <ul className="ml-4 space-y-1 mt-1">
-                  <li><a href="/work/project1" className="block text-gray-600 hover:text-orange-500">Project One</a></li>
-                  <li><a href="/work/project2" className="block text-gray-600 hover:text-orange-500">Project Two</a></li>
-                  <li><a href="/work/project3" className="block text-gray-600 hover:text-orange-500">Project Three</a></li>
-                  <li><a href="/work/project4" className="block text-gray-600 hover:text-orange-500">Project Four</a></li>
-                  <li><a href="/work/project5" className="block text-gray-600 hover:text-orange-500">Project Five</a></li>
+                  <li><a href="/work/project1" className="block text-gray-600 hover:text-orange-500">{t("navbar.projects.project1")}</a></li>
+                  <li><a href="/work/project2" className="block text-gray-600 hover:text-orange-500">{t("navbar.projects.project2")}</a></li>
+                  <li><a href="/work/project3" className="block text-gray-600 hover:text-orange-500">{t("navbar.projects.project3")}</a></li>
+                  <li><a href="/work/project4" className="block text-gray-600 hover:text-orange-500">{t("navbar.projects.project4")}</a></li>
+                  <li><a href="/work/project5" className="block text-gray-600 hover:text-orange-500">{t("navbar.projects.project5")}</a></li>
                 </ul>
               )}
             </li>
@@ -138,19 +172,19 @@ export default function Header() {
                 onClick={() => setDoOpen(!doOpen)}
                 className="w-full text-left text-gray-700 hover:text-orange-500 mt-2"
               >
-                What We Do {doOpen ? "▲" : "▼"}
+            {t("navbar.Work")} {doOpen ? "▲" : "▼"}
               </button>
               {doOpen && (
                 <ul className="ml-4 space-y-1 mt-1">
-                  <li><a href="/do/service1" className="block text-gray-600 hover:text-orange-500">Service One</a></li>
-                  <li><a href="/do/service2" className="block text-gray-600 hover:text-orange-500">Service Two</a></li>
-                  <li><a href="/do/service3" className="block text-gray-600 hover:text-orange-500">Service Three</a></li>
-                  <li><a href="/do/service4" className="block text-gray-600 hover:text-orange-500">Service Four</a></li>
-                  <li><a href="/do/service5" className="block text-gray-600 hover:text-orange-500">Service Five</a></li>
+                  <li><a href="/do/service1" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service1")}</a></li>
+                  <li><a href="/do/service2" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service2")}</a></li>
+                  <li><a href="/do/service3" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service3")}</a></li>
+                  <li><a href="/do/service4" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service4")}</a></li>
+                  <li><a href="/do/service5" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service5")}</a></li>
                 </ul>
               )}
             </li>
-             <li><a href="/contact" className="block text-gray-700 hover:text-orange-500">Contact</a></li>
+             <li><a href="/contact" className="block text-gray-700 hover:text-orange-500">{t("navbar.contact")}</a></li>
           </ul>
         </div>
       )}

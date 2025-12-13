@@ -1,0 +1,175 @@
+{
+  "navbar": {
+    "about": "About",
+    "ourWork": "Our Work",
+    "blogs": "Blogs",
+    "Work": "What We Do",
+    "contact": "Contact",
+
+    "projects": {
+      "project1": "Project One",
+      "project2": "Project Two",
+      "project3": "Project Three",
+      "project4": "Project Four",
+      "project5": "Project Five"
+    },
+
+    "services": {
+      "service1": "Service One",
+      "service2": "Service Two",
+      "service3": "Service Three",
+      "service4": "Service Four",
+      "service5": "Service Five"
+    }
+  },
+
+  "hero": {
+    "title": "Hope of Rope",
+    "subtitle": " उम्मीद की एक डोर",
+    "cta": "Yes! I Want to Help",
+    "scrollText": "Scroll For More"
+  },
+
+  "childrenSupport": {
+    "headline": "How would you like to help children today?",
+    "paragraph": "Even a small contribution can make a big difference in children's lives. We rely on generous people like you to bring real change for children in India.",
+    "cta": "Support for a brighter future",
+
+    "slides": [
+      {
+        "title": "Support Children’s Education",
+        "subtitle": "Help them stay in school"
+      },
+      {
+        "title": "Send Children Back to School",
+        "subtitle": "Support their learning journey"
+      },
+      {
+        "title": "A Thread of Hope",
+        "subtitle": "Provide hope and opportunity"
+      },
+      {
+        "title": "Bright Future for Children",
+        "subtitle": "Create lasting impact"
+      },
+      {
+        "title": "Empower Young Minds",
+        "subtitle": "Strengthen their education"
+      },
+      {
+        "title": "Complete Education, Nation’s Welfare",
+        "subtitle": "Help girls finish their education"
+      }
+    ]
+  },
+
+  "whatWeDo": {
+    "heading": "What We Do",
+    "button": "Read More",
+
+    "cards": [
+      {
+        "title": "Education",
+        "description": "Ensuring children go to school and complete their education."
+      },
+      {
+        "title": "Health & Nutrition",
+        "description": "Providing nutritious food and health support to growing children."
+      },
+      {
+        "title": "Safety & Protection",
+        "description": "Creating safe environments and protecting children from harm."
+      },
+      {
+        "title": "Child Participation",
+        "description": "Empowering children to express themselves and be part of decisions."
+      }
+    ]
+  },
+
+  "skillDevelopment": {
+    "heading": "Skill Development Approach & Methodology",
+
+    "steps": [
+      {
+        "title": "Community Awareness",
+        "points": [
+          "Area mapping",
+          "Identify strategy and create action plan"
+        ]
+      },
+      {
+        "title": "Selection & Enrollment",
+        "points": [
+          "Counseling",
+          "Documentation"
+        ]
+      },
+      {
+        "title": "Training",
+        "points": [
+          "Training as per curriculum modules and industry standards"
+        ]
+      },
+      {
+        "title": "Placement",
+        "points": [
+          "Placement in garment companies",
+          "Follow-up"
+        ]
+      },
+      {
+        "title": "ECCE & NFE",
+        "points": [
+          "Community awareness",
+          "Selection & admission",
+          "Child-centered education",
+          "Mainstream inclusion"
+        ]
+      }
+    ]
+  },
+
+  "fieldsOfWork": {
+    "heading": "Our Fields of Work",
+
+    "fields": [
+      {
+        "title": "Education",
+        "headline": "Protecting Education, Protecting the Future!",
+        "description": "From early childhood to adolescence, quality education unlocks human potential. Safe classrooms, girls' participation, and digital access remove barriers across India.",
+        "button": "Learn More"
+      },
+      {
+        "title": "Health",
+        "headline": "Protecting Health, Protecting the Future!",
+        "description": "We ensure health and nutrition for children through awareness campaigns, system strengthening, and partnerships with government bodies.",
+        "button": "Learn More"
+      },
+      {
+        "title": "Resilience",
+        "headline": "Building Resilience for Tomorrow",
+        "description": "Empowering children and communities to adapt and thrive through climate awareness, disaster preparedness, and emotional strength.",
+        "button": "Learn More"
+      },
+      {
+        "title": "Livelihood",
+        "headline": "Ensuring Livelihoods for Families",
+        "description": "Uplifting families through skill development, vocational training, and placement support for sustainable income.",
+        "button": "Learn More"
+      },
+      {
+        "title": "Protection",
+        "headline": "Safety & Protection for Every Child",
+        "description": "Creating safe spaces, preventing abuse, and advocating child rights through legal and community interventions.",
+        "button": "Learn More"
+      },
+      {
+        "title": "Humanitarian Aid",
+        "headline": "Humanitarian Aid with Dignity",
+        "description": "Rapid response during emergencies — food, shelter, and continuity of education — delivered with dignity and care.",
+        "button": "Learn More"
+      }
+    ]
+  }
+}
