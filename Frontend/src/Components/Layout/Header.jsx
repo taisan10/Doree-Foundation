@@ -13,10 +13,10 @@ export default function Header() {
   // Desktop dropdown states
   const [workDropdown, setWorkDropdown] = useState(false);
   const [doDropdown, setDoDropdown] = useState(false);
-// let workTimer, doTimer;
+let  doTimer;
 
  const workTimer = useRef(null);
-const doTimer = useRef(null);
+// const doTimer = useRef(null);
 
 
    

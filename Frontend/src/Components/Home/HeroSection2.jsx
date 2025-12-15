@@ -34,7 +34,7 @@ export default function HeroSection() {
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
         
         {/* Left Side (40%) */}
-        <div className="w-full lg:w-1/5 relative text-center lg:text-left mt-15 ml-10 lg:mt-50 lg:ml-40">
+        <div className="w-full lg:w-1/5 relative text-center lg:text-left mt-15 ml-10 lg:mt-25 lg:ml-40">
           
           {/* Accent bar */}
           <div className="absolute left-0 lg:-left-26  h-15 w-1 bg-orange-400 rounded-full"></div>
@@ -71,7 +71,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Side (60%) */}
-        <div className="w-full lg:w-4/5 lg:mt-30">
+        <div className="w-full lg:w-4/5 lg:mt-5">
           <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-xl ring-4 ring-orange-200 shadow-lg">
             
             {/* Slides */}
