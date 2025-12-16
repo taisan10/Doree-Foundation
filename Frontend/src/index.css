@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+.traffic-arrow-wrapper {
+  width: 200px;
+  height: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* diagonal directions */
+.diag-down {
+  transform: rotate(-315deg);
+  margin-top: -140px;
+}
+
+.diag-up {
+  transform: rotate(-45deg);
+  margin-top: -280px;
+}
+
+.traffic-arrow-svg {
+  width: 400%;
+}
+
+.traffic-arrow-flow {
+  animation: trafficArrowMove 3s linear infinite;
+}
+.traffic-arrow-flow polygon {
+  fill: rgba(210, 210, 210, 0.60);
+  filter: blur(0.4px);
+}
+
+@keyframes trafficArrowMove {
+  from { transform: translateX(-160px); }
+  to { transform: translateX(0); } /* continuous leftward flow */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+
+  

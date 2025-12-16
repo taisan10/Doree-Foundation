@@ -1,24 +1,87 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-export default function StoryCard({ story }) {
-  const [play, setPlay] = useState(false);
+// export default function StoryCard({ story }) {
+//   const [play, setPlay] = useState(false);
 
-  return (
-<>
+//   return (
+// <>
 
      
 
-    <div className="flex h-[450px] w-[90%] lg:w-[70%] rounded-xl overflow-hidden shadow-lg">
+//     <div className="flex h-[450px] w-[90%] lg:w-[70%] rounded-xl overflow-hidden shadow-lg">
       
+//       {/* Left Side */}
+//       <div className={`flex-1 p-8 ${story.bgColor} flex flex-col justify-between`}>
+//         <div>
+//           <h2 className="text-3xl text-gray-800 font-bold mb-4">{story.title}</h2>
+//           <p className="text-gray-700 mb-6">{story.description}</p>
+//         </div>
+//        <button className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 transition w-fit">
+//   {story.buttonText}
+// </button>
+//       </div>
+
+//       {/* Right Side */}
+//       <div className="flex-1 relative bg-black flex items-center justify-center">
+//         {!play ? (
+//           <div className="relative cursor-pointer" onClick={() => setPlay(true)}>
+//             <img src={story.thumbnail} alt={story.title} className="w-full h-full object-cover" />
+//             <div className="absolute inset-0 flex items-center justify-center">
+//               <div className="bg-white rounded-full p-4 shadow-lg">
+//                 <svg className="w-13 h-13 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+//                   <path d="M8 5v14l11-7z" />
+//                 </svg>
+//               </div>
+//             </div>
+//           </div>
+//         ) : (
+//           <iframe
+//             className="w-full h-full"
+//             src={`https://www.youtube.com/embed/${story.videoId}?autoplay=1`}
+//             title={story.title}
+//             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+//             allowFullScreen
+//           ></iframe>
+//         )}
+//       </div>
+//     </div>
+//       </> 
+//   );
+// }
+
+
+
+
+
+import { useState, useRef, useEffect } from "react";
+
+export default function StoryCard({ story, active }) {
+  const [play, setPlay] = useState(false);
+  const iframeRef = useRef(null);
+
+  // जब active false हो (arrow से slide बदला), तो वीडियो pause कर दो
+  useEffect(() => {
+    if (iframeRef.current) {
+      const message = JSON.stringify({
+        event: "command",
+        func: active ? "playVideo" : "pauseVideo",
+        args: []
+      });
+      iframeRef.current.contentWindow.postMessage(message, "*");
+    }
+  }, [active]);
+
+  return (
+    <div className="flex h-[500px] w-[90%] lg:w-[70%] rounded-xl overflow-hidden shadow-lg">
       {/* Left Side */}
       <div className={`flex-1 p-8 ${story.bgColor} flex flex-col justify-between`}>
         <div>
           <h2 className="text-3xl text-gray-800 font-bold mb-4">{story.title}</h2>
           <p className="text-gray-700 mb-6">{story.description}</p>
         </div>
-       <button className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 transition w-fit">
-  {story.buttonText}
-</button>
+        <button className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 transition w-fit">
+          {story.buttonText}
+        </button>
       </div>
 
       {/* Right Side */}
@@ -28,7 +91,7 @@ export default function StoryCard({ story }) {
             <img src={story.thumbnail} alt={story.title} className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="bg-white rounded-full p-4 shadow-lg">
-                <svg className="w-10 h-10 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-13 h-13 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
@@ -36,8 +99,9 @@ export default function StoryCard({ story }) {
           </div>
         ) : (
           <iframe
+            ref={iframeRef}
             className="w-full h-full"
-            src={`https://www.youtube.com/embed/${story.videoId}?autoplay=1`}
+            src={`https://www.youtube.com/embed/${story.videoId}?autoplay=1&enablejsapi=1`}
             title={story.title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -45,6 +109,9 @@ export default function StoryCard({ story }) {
         )}
       </div>
     </div>
-      </> 
   );
 }
+
+
+
+

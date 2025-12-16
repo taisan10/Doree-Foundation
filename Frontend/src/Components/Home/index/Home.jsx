@@ -1,3 +1,4 @@
+import JourneySection from "../../journey/JourneySection";
 import FieldsOfWorkSection from "../Fields";
 import ChildrenSupportSection from "../HelpChildren";
 // import HomeCarousel from "../HeroSection";
@@ -16,7 +17,8 @@ export function Home(){
       <WhatWeDoSection />
       <SkillDevelopmentSection />
       <FieldsOfWorkSection />
-    <StoriesSection />
+      <StoriesSection />
+      <JourneySection />
     </div>
   )
 }
