@@ -7,6 +7,7 @@ import StoriesSection from "../s/StoriesSection";
 import SkillDevelopmentSection from "../Skill";
 
 import WhatWeDoSection from "../Whatwedo";
+import Work5YearSection from "../Work5Year";
 
 export function Home(){
   return(
@@ -19,6 +20,7 @@ export function Home(){
       <FieldsOfWorkSection />
       <StoriesSection />
       <JourneySection />
+      <Work5YearSection />
     </div>
   )
 }

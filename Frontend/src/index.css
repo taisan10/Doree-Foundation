@@ -24,7 +24,7 @@
 }
 
 .traffic-arrow-flow {
-  animation: trafficArrowMove 3s linear infinite;
+  animation: trafficArrowMove 2.3s linear infinite;
 }
 .traffic-arrow-flow polygon {
   fill: rgba(210, 210, 210, 0.60);

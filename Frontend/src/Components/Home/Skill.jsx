@@ -84,34 +84,34 @@
 
 
 export default function SkillDevelopmentFlowchart() {
-  const steps = [
+ const steps = [
   {
-    title: "समुदाय जागरूकता",
-    points: ["क्षेत्र मानचित्रण", "रणनीति पहचानना और कार्य योजना बनाना"],
+    title: "Community Awareness",
+    points: ["Area Mapping", "Identifying strategies and creating an action plan"],
     color: "border-orange-500",
   },
   {
-    title: "चयन और नामांकन",
-    points: ["परामर्श", "प्रलेखन"],
+    title: "Selection and Enrollment",
+    points: ["Counseling", "Documentation"],
     color: "border-pink-500",
   },
   {
-    title: "प्रशिक्षण",
-    points: ["पाठ्यक्रम मॉड्यूल और उद्योग मानक के अनुसार प्रशिक्षण"],
+    title: "Training",
+    points: ["Training as per curriculum modules and industry standards"],
     color: "border-green-500",
   },
   {
-    title: "नियोजन",
-    points: ["वस्त्र कंपनियों में नियुक्ति", "अनुवर्ती कार्रवाई"],
+    title: "Placement",
+    points: ["Placement in garment companies", "Follow-up support"],
     color: "border-blue-500",
   },
   {
-    title: "ईसीसीई और एनएफई",
+    title: "ECCE and NFE",
     points: [
-      "समुदाय जागरूकता",
-      "चयन और प्रवेश",
-      "बाल-केंद्रित शिक्षा",
-      "मुख्यधारा में शामिल करना",
+      "Community Awareness",
+      "Selection and Admission",
+      "Child-centric Education",
+      "Mainstream Integration",
     ],
     color: "border-yellow-500",
   },
