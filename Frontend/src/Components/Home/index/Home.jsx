@@ -4,9 +4,9 @@ import ChildrenSupportSection from "../HelpChildren";
 // import HomeCarousel from "../HeroSection";
 import HeroSection from "../HeroSection2";
 import StoriesSection from "../s/StoriesSection";
-import SkillDevelopmentSection from "../Skill";
+// import SkillDevelopmentSection from "../Skill";
 
-import WhatWeDoSection from "../Whatwedo";
+// import WhatWeDoSection from "../Whatwedo";
 import Work5YearSection from "../Work5Year";
 
 export function Home(){
@@ -15,12 +15,12 @@ export function Home(){
       {/* <HomeCarousel /> */}
       <HeroSection />
       <ChildrenSupportSection />
-      <WhatWeDoSection />
-      <SkillDevelopmentSection />
+      {/* <WhatWeDoSection /> */}
+      {/* <SkillDevelopmentSection /> */}
       <FieldsOfWorkSection />
-      <StoriesSection />
       <JourneySection />
       <Work5YearSection />
+      <StoriesSection />
     </div>
   )
 }
