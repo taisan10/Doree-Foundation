@@ -45,4 +45,18 @@
 }
 
 
-  
+  /* styles.css */
+@media (min-width: 1010px) and (max-width: 1120px) {
+  .hero-section {
+    @apply mt-15 ml-25;
+  }
+  .hope{
+    @apply  -ml-22;
+  }
+  .field{
+    @apply gap-10
+  }
+  .success-story {
+    @apply h-[400px]
+  }
+}

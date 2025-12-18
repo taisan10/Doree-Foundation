@@ -26,15 +26,15 @@ export default function HomeCarousel() {
 
   return (
   
-<div className="relative w-screen mx-auto mt-26 overflow-hidden">
+<div className="relative w-screen mx-auto mt- overflow-hidden">
   <div
-    className="flex transition-transform duration-700 ease-in-out"
+    className="flex  transition-transform duration-700 ease-in-out"
     style={{ transform: `translateX(-${current * 100}vw)` }}
   >
     {images.map((src, index) => (
       <div
         key={index}
-        className="w-screen h-[650px] bg-black bg-center bg-no-repeat bg-cover flex-shrink-0"
+        className="w-screen h-[560px] bg-black bg-center bg-no-repeat bg-cover flex-shrink-0"
         style={{ backgroundImage: `url(${src})` }}
       ></div>
     ))}

@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 const impactData = [
   {
     id: 1,
-    title: "Health & Nutrition",
-    desc: "Helping families achieve rship programs...",
+    title: "Health ",
+    desc: "Helping families achieve rship ",
     count: 121480,
     color: "bg-pink-100",
     icon: "/Icons/Health1.png"
@@ -13,7 +13,7 @@ const impactData = [
   {
     id: 2,
     title: "Education",
-     desc: "Providing vocational training andihoods...",
+     desc: "Providing vocational training ",
     count: 90252,
     color: "bg-teal-100",
     icon: "/Icons/Education.png"
@@ -21,7 +21,7 @@ const impactData = [
   {
     id: 3,
     title: "Protection",
-     desc: "Empowering children to express themselves and be part of d",
+     desc: "Empowering express themselves",
     count: 30250,
     color: "bg-orange-300",
     icon: "/Icons/Human.png"
@@ -29,7 +29,7 @@ const impactData = [
   {
     id: 4,
     title: "Participation",
-     desc: "Quality education unlocks human ...",
+     desc: "Quality education unlocks ",
     count: 26530,
     color: "bg-green-100",
     icon: "/Icons/Security1.png"
@@ -37,7 +37,7 @@ const impactData = [
   {
     id: 5,
     title: "Economic Well-being",
-     desc: "Ensuring nutritious food and healthcare. Discoverm...",
+     desc: "Ensuring nutritious food health",
     count: 61007,
     color: "bg-yellow-100",
     icon: "/Icons/Education1.png"
@@ -45,7 +45,7 @@ const impactData = [
   {
     id: 6,
     title: "Humanitarian Work",
-     desc:"Creating safe environments and protecting children ..",
+     desc:"Creating safe environments and protec",
     count: 21858,
     color: "bg-purple-100",
     icon: "/Icons/Education2.png"
@@ -95,7 +95,7 @@ export default function Work5YearSection() {
         </div>
 
         {/* Right Side */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 -mr-25 ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:-ml-5 ">
           {impactData.map((item) => (
             <div
               key={item.id}
@@ -117,7 +117,7 @@ export default function Work5YearSection() {
               <p className="text-gray-700 font-semibold">{item.desc}</p>
 
               {/* Bottom Line */}
-              <div className="mt- h-px bg-gray-300" />
+              <div className=" h-px bg-gray-300" />
             </div>
           ))}
         </div>

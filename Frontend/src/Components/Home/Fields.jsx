@@ -68,7 +68,7 @@ export default function FieldsOfWorkSection() {
       </h2>
 
       {/* Subtitle Icons */}
-      <div className="flex flex-wrap justify-center gap-26 mb-10 relative">
+      <div className="flex flex-wrap justify-center  lg:gap-26 mb-10 relative  field">
         {fields.map((field, index) => (
           <div
             key={index}
