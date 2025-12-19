@@ -87,14 +87,14 @@ export default function StoryCard({ story, active }) {
         className={`w-full sm:w-1/2 p-6 sm:p-8 ${story.bgColor} flex flex-col justify-between`}
       >
         <div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-800 font-bold mb-3 sm:mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-800 font-bold mb-1 md:mb-3 sm:mb-4">
             {story.title}
           </h2>
-          <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
+          <p className="text-sm sm:text-base text-gray-700 md:mb-4 sm:mb-6">
             {story.description}
           </p>
         </div>
-        <button className="bg-orange-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-md hover:bg-orange-600 transition w-fit">
+        <button className="bg-orange-500 text-white  px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-md hover:bg-orange-600 transition w-fit">
           {story.buttonText}
         </button>
       </div>
