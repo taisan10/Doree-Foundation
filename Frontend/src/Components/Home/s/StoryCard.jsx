@@ -81,7 +81,7 @@ export default function StoryCard({ story, active }) {
   }, [active]);
 
   return (
-    <div className="flex flex-col sm:flex-row h-auto sm:h-[400px] lg:h-[500px] w-full sm:w-[90%] lg:w-[70%] rounded-xl overflow-hidden shadow-lg success-story mx-auto">
+    <div className="flex flex-col sm:flex-row h-110 sm:h-[400px] lg:h-[500px] w-full sm:w-[90%] lg:w-[70%] rounded-xl overflow-hidden shadow-lg success-story mx-auto">
       {/* Left Side */}
       <div
         className={`w-full sm:w-1/2 p-6 sm:p-8 ${story.bgColor} flex flex-col justify-between`}
