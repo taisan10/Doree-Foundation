@@ -5,7 +5,7 @@
 export default function Arrow({ direction = "down" }) {
   // direction: "down" (↘︎) or "up" (↗︎)
   return (
-    <div className={`traffic-arrow-wrapper  ml-45 ${direction === "up" ? "diag-up" : "diag-down"}`}>
+    <div className={`traffic-arrow-wrapper  ml-45 ${direction === "up" ? "diag-up journey-diag-up" : "diag-down"}`}>
       <svg
         width="200"
         height="60"

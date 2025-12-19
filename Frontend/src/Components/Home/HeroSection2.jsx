@@ -35,7 +35,7 @@ export default function HeroSection() {
         <div className="w-full md:w-1/5 lg:w-1/5 relative text-center md:text-left lg:text-left 
 
         
-      mb-6 ml-10 md:mt-15 md:ml-10    lg:mt-25 lg:ml-35   
+      mb-6 ml-10 md:mt-15 md:ml-1    lg:mt-25 lg:ml-35   
         
          hero-section
         
@@ -44,11 +44,11 @@ export default function HeroSection() {
           {/* Accent bar */}
           <div className="absolute left-0 md:-left-5 lg:-left-26  md:h-12 lg:h-15 w-1 bg-orange-400 rounded-full"></div>
 
-          <h1 className="text-3xl md:text-3xl lg:text-4xl font-extrabold md:mb-6 mb-4 leading-snug text-orange-500 md:-ml-2 lg:-ml-21 hope">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-extrabold  mb-4 md:mb-2 lg:mb-4 leading-snug text-orange-500 md:-ml-2 lg:-ml-21 hope">
             {t("hero.title")}
           </h1>
 
-          <p className="text-2xl lg:text-3xl font-bold text-orange-500  mb-6 lg:-ml-21">
+          <p className="text-2xl lg:text-3xl font-bold text-orange-500  mb-6 md:mb-2 lg:mb-6 lg:-ml-21">
             {/* उम्मीद की एक डोर */}
              {t("hero.subtitle")}
           </p>
@@ -56,13 +56,13 @@ export default function HeroSection() {
           <PrimaryButton href="/contact" className="lg:-ml-21" >   {t("hero.cta")}</PrimaryButton>
 
           {/* Scroll indicator */}
-      <div className="hidden lg:mt-25 flex flex-col items-center lg:items-start gap-3 text-lg text-gray-600">
+      <div className="hidden md:block md:mt-15 lg:mt-25 flex flex-col items-center lg:items-start gap-3 text-lg text-gray-600">
 
   {/* Vertical Line */}
   <div className="w-[3px] h-15 bg-orange-400 rounded-full animate-pulse lg:-ml-20 lg:-mb-4"></div>
 
   {/* Dot */}
-  <div className="lg:w-5 lg:h-5 bg-orange-500 rounded-full animate-pulse lg:-ml-22"></div>
+  <div className="md:w-5 md:h-5 md:-ml-2  lg:w-5 lg:h-5 lg:-ml-22 bg-orange-500 rounded-full animate-pulse "></div>
 
   {/* Text */}
 <span className="text-gray-700 font-medium tracking-wide text-xl animate-tilt lg:-ml-21">

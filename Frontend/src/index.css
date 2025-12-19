@@ -46,7 +46,20 @@
 
 
   /* styles.css */
-@media (min-width: 1010px) and (max-width: 1120px) {
+
+
+
+  
+@media (min-width: 1120px) and (max-width: 1350px) {
+
+
+   .icons-gap {
+    @apply gap-18
+
+  }
+   
+}
+@media (min-width: 1024px) and (max-width: 1120px) {
   .hero-section {
     @apply mt-15 ml-25;
   }
@@ -59,5 +72,24 @@
   .success-story {
     @apply h-[400px]
   }
-  
+  .helpchildren-height{
+    @apply h-70
+  }
+  .helpchildren-width{
+    @apply min-w-[45%] 
+  }
+  .helpchildren-ChevronRight{
+    @apply top-53 
+  }
+}
+
+
+@media (min-width: 764px) and (max-width: 1020px) {
+
+
+   .journey-diag-up {
+    @apply  -rotate-10 ml-35 -mt-85
+
+  }
+   
 }

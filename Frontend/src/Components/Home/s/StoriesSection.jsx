@@ -52,7 +52,7 @@ export default function StoriesSection() {
       {/* Left Arrow */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100"
+        className="absolute top-80 md:top-1/2 left-4 transform -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100"
       >
         <ChevronLeft className="w-6 h-6 text-gray-700" />
       </button>
@@ -60,7 +60,7 @@ export default function StoriesSection() {
       {/* Right Arrow */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100"
+        className="absolute top-80 md:top-1/2 right-4 transform -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100"
       >
         <ChevronRight className="w-6 h-6 text-gray-700" />
       </button>

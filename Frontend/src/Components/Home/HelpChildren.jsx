@@ -79,7 +79,7 @@ export default function ChildrenSupportSection() {
 </div>
 
         {/* RIGHT SIDE – 75% */}
-        <div className="col-span-1 lg:col-span-3 lg:ml-60 relative">
+        <div className="col-span-1 lg:col-span-3 lg:ml-50 -mr-10 relative  ">
 
 
            {/* ARROWS – Same Your Position */}
@@ -94,7 +94,7 @@ export default function ChildrenSupportSection() {
 
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 -translate-y-1/2 left-[-24px] z-10 
+            className="absolute top-1/2 helpchildren-ChevronRight -translate-y-1/2 left-[-24px] z-10 
                        bg-white w-12 h-12 rounded-full shadow-md flex items-center justify-center 
                        hover:bg-gray-100 transition"
           >
@@ -102,19 +102,19 @@ export default function ChildrenSupportSection() {
           </button>
 
           {/* IMAGE SLIDER (2 items visible) */}
-          <div className="overflow-hidden">
+          <div className="overflow-hidden  ">
             <div
-              className="flex gap-6 transition-transform duration-500 ease-in-out"
+              className="flex gap-6 transition-transform duration-500 ease-in-out  "
               style={{ transform: `translateX(-${index * 50}%)` }}
             >
               {images.map((item, i) => (
                 <div
                   key={i}
-                  className="min-w-[47%] bg-white rounded-lg shadow-md overflow-hidden border-b-4 border-orange-400"
+                  className=" min-w-[45%] md:min-w-[47%]  helpchildren-width bg-white rounded-lg shadow-md overflow-hidden border-b-4 border-orange-400"
                 >
                   <img
                     src={item.img}
-                    className="w-full h-90 object-cover"
+                    className="w-full h-90 object-cover   helpchildren-height"
                     alt="child"
                   />
 
@@ -133,32 +133,6 @@ export default function ChildrenSupportSection() {
     </section>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

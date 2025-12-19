@@ -68,12 +68,12 @@ export default function FieldsOfWorkSection() {
       </h2>
 
       {/* Subtitle Icons */}
-      <div className="flex flex-wrap justify-center  lg:gap-26 mb-10 relative  field">
+      <div className="flex flex-wrap justify-center gap-5 sm:gap-6 md:gap-6 lg:gap-30 mb-10 relative  field icons-gap ">
         {fields.map((field, index) => (
           <div
             key={index}
             onClick={() => setActiveIndex(index)}
-            className="flex flex-col items-center cursor-pointer group"
+            className="flex flex-col items-center  cursor-pointer group"
           >
             <img
               src={field.icon}
@@ -90,11 +90,11 @@ export default function FieldsOfWorkSection() {
       </div>
 
       {/* Dynamic Content */}
-      <div className="flex flex-col lg:flex-row items-center gap-8 bg-white rounded-xl shadow-md p-6">
+      <div className="flex flex-col lg:flex-row items-center gap-8 bg-white rounded-xl  shadow-md p-6">
         <img
           src={fields[activeIndex].image}
           alt={fields[activeIndex].title}
-          className="w-full lg:w-1/2 rounded-lg object-cover"
+          className="w-full  h-full md:h-100  lg:h-90 lg:w-1/2 rounded-lg object-cover"
         />
         <div className="flex-1">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">

@@ -82,7 +82,7 @@ function Counter({ target }) {
 export default function Work5YearSection() {
   return (
     <section className="w-full  py-20 -mt-10 ">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6">
         {/* Left Side */}
         <div className="flex flex-col justify-center items-start ">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -95,7 +95,7 @@ export default function Work5YearSection() {
         </div>
 
         {/* Right Side */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:-ml-5 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 lg:-ml-5 ">
           {impactData.map((item) => (
             <div
               key={item.id}
