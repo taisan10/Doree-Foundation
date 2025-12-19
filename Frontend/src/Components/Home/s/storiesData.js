@@ -1,12 +1,12 @@
 export const storiesData = [
   {
     id: 1,
-    title: "Education for All",
+    // title: "Education for All",
     description: "Quality education unlocks human potential. Discover how React revolutionizes UI development with its component-based architecture and declarative paradigm...",
     bgColor: "bg-pink-100",
     // buttonText: "Read More",
     videoId: "dQw4w9WgXcQ", // YouTube video ID
-    thumbnail: "/Icons/Education.png"
+    thumbnail: "/Icons/Educatin.png"
   },
   {
     id: 2,
