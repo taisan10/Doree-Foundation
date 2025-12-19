@@ -108,7 +108,7 @@ export default function StoryCard({ story, active }) {
           >
             <img
               src={story.thumbnail}
-              alt={story.title}
+              alt={story.Altitle}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
