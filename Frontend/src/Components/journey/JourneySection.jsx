@@ -121,7 +121,7 @@ const totalSlides = Math.ceil(journeyData.length / visibleCount);
 useEffect(() => {
   const timer = setInterval(() => {
     setCurrent((prev) => (prev + 1) % totalSlides);
-  }, 3000);
+  }, 6000);
 
   return () => clearInterval(timer);
 }, [visibleCount, totalSlides]);
