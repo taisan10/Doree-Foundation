@@ -169,7 +169,7 @@ useEffect(() => {
     <button
       key={i}
       onClick={() => setCurrent(i)}
-      className={`h-[4px] w-[34px] transition-all ${
+      className={`h-[6px] w-[36px] transition-all ${
 
         current === i ? "bg-gray-700" : "bg-gray-300"
       }`}
