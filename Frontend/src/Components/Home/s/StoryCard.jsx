@@ -90,7 +90,7 @@ export default function StoryCard({ story, active }) {
           <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-800 font-bold mb-1 md:mb-3 sm:mb-4">
             {story.title}
           </h2>
-          <p className="text-sm sm:text-base text-gray-700 md:mb-4 sm:mb-6">
+          <p className="text-sm sm:text-base text-gray-700 mb-2 md:mb-4 sm:mb-6">
             {story.description}
           </p>
         </div>
