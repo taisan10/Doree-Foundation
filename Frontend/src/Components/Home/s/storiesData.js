@@ -19,12 +19,12 @@ export const storiesData = [
   },
   {
     id: 3,
-    title: "Safety & Protection",
+    // title: "Safety & Protection",
     description: "Creating safe environments and protecting children from harm through awareness and community support...",
     bgColor: "bg-blue-100",
     buttonText: "Read More",
     videoId: "3JZ_D3ELwOQ",
-    thumbnail: "/Icons/Resilience.png"
+    thumbnail: "/Icons/Resilienc.png"
   },
   {
     id: 4,
