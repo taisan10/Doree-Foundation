@@ -10,8 +10,9 @@
 
 /* diagonal directions */
 .diag-down {
-  transform: rotate(-315deg);
-  margin-top: -140px;
+  transform: rotate(-320deg);
+  margin-top: -150px;
+  margin-left: 230px;
 }
 
 .diag-up {

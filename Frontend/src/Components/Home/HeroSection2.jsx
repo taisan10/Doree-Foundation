@@ -62,7 +62,7 @@ export default function HeroSection() {
   <div className="w-[3px] h-15 bg-orange-400 rounded-full animate-pulse lg:-ml-20 lg:-mb-4"></div>
 
   {/* Dot */}
-  <div className="md:w-5 md:h-5 md:-ml-2  lg:w-5 lg:h-5 lg:-ml-22 bg-orange-500 rounded-full animate-pulse "></div>
+  <div className="md:w-5 md:h-5 md:-ml-2  lg:w-5 lg:h-5 lg:-ml-22 lg:mt-3 bg-orange-500 rounded-full animate-pulse "></div>
 
   {/* Text */}
 <span className="text-gray-700 font-medium tracking-wide text-xl animate-tilt lg:-ml-21">
