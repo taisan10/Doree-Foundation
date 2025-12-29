@@ -62,8 +62,8 @@ export default function FieldsOfWorkSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="bg-orange-100 py-12 px-6 lg:px-20">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
+    <section className="bg-orange-100 py-12 px-6 lg:px-20 ">
+      <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 ">
         Our Fields of Work
       </h2>
 
@@ -73,7 +73,7 @@ export default function FieldsOfWorkSection() {
           <div
             key={index}
             onClick={() => setActiveIndex(index)}
-            className="flex flex-col items-center  cursor-pointer group"
+            className="flex flex-col items-center cursor-pointer group"
           >
             <img
               src={field.icon}

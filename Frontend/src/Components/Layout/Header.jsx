@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { Logo, PrimaryButton } from "./../UI/UiComponent";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 
 export default function Header() {
@@ -56,10 +57,10 @@ return (
     onChange={(e) => changeLanguage(e.target.value)}
     className="border bg-gray-800 text-white rounded px-2 py-1 text-sm"
     >
-    <option value="en">English</option>
     <option value="hi">हिंदी</option>
     <option value="mr">मराठी</option>
 <option value="pa">ਪੰਜਾਬੀ</option>
+    <option value="en">English</option>
 
   </select>
 </div>
@@ -70,7 +71,11 @@ return (
 
           {/* Center: Menu (Desktop) */}
           <div className="hidden lg:flex space-x-6">
-            <a href="/about" className="text-gray-700 hover:text-orange-500"> {t("navbar.about")}</a>
+            <Link to="/about" className="text-gray-700 hover:text-orange-500">
+
+             {t("navbar.about")}
+             
+             </Link>
 
             {/* Our Work dropdown */}
             <div
@@ -81,13 +86,13 @@ return (
               <button className="text-gray-700 hover:text-orange-500">{t("navbar.ourWork")}</button>
               {workDropdown && (
                 <div className="absolute bg-white shadow-md rounded-md mt-2 text-xl">
-                  {/* <ul className="py-2 w-48">
+                  <ul className="py-2 w-48">
                     <li><a href="/work/project1" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project1")}</a></li>
                     <li><a href="/work/project2" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project2")}</a></li>
                     <li><a href="/work/project3" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project3")}</a></li>
                     <li><a href="/work/project4" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project4")}</a></li>
                     <li><a href="/work/project5" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project5")}</a></li>
-                  </ul> */}
+                  </ul>
                 </div>
               )}
             </div>
