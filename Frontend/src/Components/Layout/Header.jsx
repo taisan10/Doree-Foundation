@@ -148,7 +148,7 @@ return (
       {open && (
         <div className="lg:hidden bg-white shadow-md">
           <ul className="flex flex-col space-y-2 px-4 py-3">
-            <li><a href="/about" className="block text-gray-700 hover:text-orange-500">{t("navbar.about")}</a></li>
+            <Link to="/about" className="block text-gray-700 hover:text-orange-500">{t("navbar.about")}</Link>
             <li><a href="/blogs" className="block text-gray-700 hover:text-orange-500">{t("navbar.blogs")}</a></li>
            
 
