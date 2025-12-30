@@ -2,11 +2,11 @@ export default function InspirationSection() {
   return (
     <section className=" py-14 px-6 md:px-16 ">
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#154c79]">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#154c79]">
         Inspiration - The story of Hope
       </h2>
 
-      <div className="w-40 h-[3px] bg-orange-500 mt-2 mb-10" />
+      <div className="w-30 sm:w-40 md:w-45 h-[3px] bg-orange-500 mt-2 mb-10" />
 
       {/* Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
