@@ -5,12 +5,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function HomeCarousel() {
   const images = [
-    "/HeroSection/Hero1.png",
-    "/HeroSection/Hero2.png",
-    "/HeroSection/Hero3.png",
-    "/HeroSection/Hero4.png",
-    "/HeroSection/Hero5.png",
-    "/HeroSection/Hero6.png",
+    "/HeroSection/1.jpg",
+    "/HeroSection/2.jpg",
+    "/HeroSection/3.jpg",
+    "/HeroSection/4.jpg",
+    "/HeroSection/5.jpg",
+    "/HeroSection/6.jpg",
    
   ];
 

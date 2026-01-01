@@ -23,7 +23,7 @@ export default function InspirationSection() {
         <div className="bg-transparent">
           <div className="border-t border-orange-500  pt-6 pb-6">
             <p className="text-gray-700 text-lg leading-relaxed">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta asperiores voluptatem corrupti pariatur doloremque impedit, magni eius quis itaque dolore molestiae, commodi maiores recusandae dolorem nesciunt sint, dolor quam labore! Explicabo quam earum fugiat maiores ratione at voluptatibus beatae soluta necessitatibus error. In inventore autem incidunt officiis distinctio dolore magni fugiat molestiae ducimus ad porro obcaecati pariatur perferendis voluptates deserunt mollitia sapiente odio, assumenda facere? Nulla, nihil. Tempora, totam dolorum! Accusamus unde autem blanditiis quaerat est assumenda illum, error libero dicta odio soluta modi, repudiandae consectetur aliquam nulla asperiores.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta asperiores voluptatem corrupti pariatur doloremque impedit, magni eius quis itaque dolore molestiae, commodi maiores recusandae dolorem nesciunt sint, dolor quam labore! Explicabo quam earum fugiat maiores ratione at voluptatibus beatae soluta necessitatibus error. In inventore autem incidunt officiis distinctio dolore magni fugiat molestiae ducimus ad porro obcaecati pariatur perferendis voluptates deserunt mollitia sapiente odio.
             </p>
           </div>
 

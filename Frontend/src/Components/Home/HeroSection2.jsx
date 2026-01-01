@@ -7,14 +7,24 @@ import { useTranslation } from "react-i18next";
 
 
 export default function HeroSection() {
-  const images = [
-    "/HeroSection/Hero1.png",
-    "/HeroSection/Hero3.png",
-    "/HeroSection/Hero4.png",
-    "/HeroSection/Hero5.png",
-    "/HeroSection/Hero6.png",
-    "/HeroSection/Hero2.png",
+   const images = [
+     "/HeroSection/2.jpg",
+     "/HeroSection/1.jpg",
+     "/HeroSection/1.1.jpg",
+    "/HeroSection/3.jpg",
+    "/HeroSection/4.jpg",
+    "/HeroSection/5.jpg",
+    "/HeroSection/6.jpg",
+    "/HeroSection/6.1.jpg",
+    "/HeroSection/7.jpg",
+    "/HeroSection/8.jpg",
+    "/HeroSection/9.jpg",
+    "/HeroSection/10.jpg",
+    "/HeroSection/11.jpg",
+    "/HeroSection/12.jpg",
+   
   ];
+
 
   const [current, setCurrent] = useState(0);
 
@@ -76,7 +86,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Side (60%) */}
-        <div className="w-full md:w-4/5 lg:w-4/5 md:mt-5 md:ml-5  lg:mt-5">
+        <div className="w-full md:w-4/5 lg:w-5/5 md:mt-5 md:ml-5  lg:mt-5">
           <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-xl ring-4 ring-orange-200 shadow-lg">
             
             {/* Slides */}
@@ -89,7 +99,7 @@ export default function HeroSection() {
                   key={index}
                   src={src}
                   alt={`Slide ${index + 1}`}
-                  className="w-full md:h-[450px]  lg:h-[500px] object-cover flex-shrink-0 transition-opacity duration-500"
+                  className="w-full md:h-[450px]  lg:h-[560px] object-cover flex-shrink-0 transition-opacity duration-500"
                 />
               ))}
             </div>

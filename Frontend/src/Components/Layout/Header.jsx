@@ -52,18 +52,7 @@ const handleMouseLeaveDo = () => {
 
 return (
   <nav className="bg-white shadow-md top-0 left-0 w-full z-10">
-      <div className="flex justify-end fixed bg-gray-800 px-4 py-2">
-  <select
-    onChange={(e) => changeLanguage(e.target.value)}
-    className="border bg-gray-800 text-white rounded px-2 py-1 text-sm"
-    >
-    <option value="hi">हिंदी</option>
-    <option value="mr">मराठी</option>
-<option value="pa">ਪੰਜਾਬੀ</option>
-    <option value="en">English</option>
-
-  </select>
-</div>
+  
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-25 text-2xl">
           {/* Left: Logo */}
@@ -121,10 +110,27 @@ return (
             </div>
           </div>
 
-          {/* Right: Contact Button */}
-          <div className="hidden lg:block">
+
+<div className="flex items-center gap-4">
+  {/* Language Selector */}
+  <select
+    onChange={(e) => changeLanguage(e.target.value)}
+    className="border bg-gray-800 text-white rounded px-2 py-1 text-sm"
+  >
+    <option value="hi">हिंदी</option>
+    <option value="mr">मराठी</option>
+    <option value="pa">ਪੰਜਾਬੀ</option>
+    <option value="en">English</option>
+  </select>
+
+  {/* Contact Button */}
+    <div className="hidden lg:block">
             <PrimaryButton href="/contact">{t("navbar.contact")}</PrimaryButton>
           </div>
+</div>
+
+
+       
 
           {/* Mobile Hamburger */}
           <div className="lg:hidden">

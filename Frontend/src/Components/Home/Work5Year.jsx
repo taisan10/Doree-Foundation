@@ -4,49 +4,49 @@ import { useEffect, useRef, useState } from "react";
 const impactData = [
   {
     id: 1,
-    title: "Health ",
-    desc: "Helping families achieve rship ",
-    count: 121480,
+      title: "Village Outreach",
+  desc: "Support • Serve • Uplift",
+    count: 5000,
     color: "bg-pink-100",
     icon: "/Icons/Health1.png"
   },
   {
     id: 2,
     title: "Education",
-     desc: "Providing vocational training ",
-    count: 90252,
+  desc: "Study • Shine • Progress",
+    count: 20000,
     color: "bg-teal-100",
     icon: "/Icons/Education.png"
   },
   {
     id: 3,
-    title: "Protection",
-     desc: "Empowering express themselves",
-    count: 30250,
+    title: "Awareness for Rural Girls",
+     desc: "Learn • Lead • Grow",
+    count: 10000,
     color: "bg-orange-300",
     icon: "/Icons/Human.png"
   },
   {
     id: 4,
-    title: "Participation",
-     desc: "Quality education unlocks ",
-    count: 26530,
+    title: "Tree Plantation Drive",
+  desc: "Plant • Protect • Preserve",
+    count: 12000,
     color: "bg-green-100",
     icon: "/Icons/Security1.png"
   },
   {
     id: 5,
-    title: "Economic Well-being",
-     desc: "Ensuring nutritious food health",
-    count: 61007,
+     title: "No-Plastic Campaign",
+  desc: "Reduce • Reuse • Respect",
+    count: 250,
     color: "bg-yellow-100",
     icon: "/Icons/Education1.png"
   },
   {
     id: 6,
-    title: "Humanitarian Work",
-     desc:"Creating safe environments and protec",
-    count: 21858,
+    title: "Placement Drive",
+     desc:"Skills • Jobs • Growth",
+    count: 15000,
     color: "bg-purple-100",
     icon: "/Icons/Education2.png"
   }
@@ -95,7 +95,7 @@ export default function Work5YearSection() {
         </div>
 
         {/* Right Side */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 lg:-ml-5 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 lg:-ml-10 ">
           {impactData.map((item) => (
             <div
               key={item.id}
@@ -108,16 +108,16 @@ export default function Work5YearSection() {
 
               {/* Count */}
               <h3 className="text-2xl font-bold text-gray-800 ">
-                <Counter target={item.count} />
+                <Counter target={item.count} />+
               </h3>
 
               {/* Title */}
-              <p className="text-gray-700 font-bold ">{item.title}</p>
+              <p className="text-gray-700 font-bold text-[1.10rem] ">{item.title}</p>
 
               <p className="text-gray-700 font-semibold">{item.desc}</p>
 
               {/* Bottom Line */}
-              <div className=" h-px bg-gray-300" />
+              <div className="h-px bg-gray-300" />
             </div>
           ))}
         </div>
