@@ -7,39 +7,24 @@ import { useTranslation } from "react-i18next";
 
 
 export default function HeroSection() {
-  //  const images = [
-  //    "/HeroSection/2.jpg",
-  //    "/HeroSection/1.jpg",
-  //    "/HeroSection/1.1.jpg",
-  //   "/HeroSection/3.jpg",
-  //   "/HeroSection/4.jpg",
-  //   "/HeroSection/5.jpg",
-  //   "/HeroSection/6.jpg",
-  //   "/HeroSection/6.1.jpg",
-  //   "/HeroSection/7.jpg",
-  //   "/HeroSection/8.jpg",
-  //   "/HeroSection/9.jpg",
-  //   "/HeroSection/10.jpg",
-  //   "/HeroSection/11.jpg",
-  //   "/HeroSection/12.jpg",
-   
-  // ];
+
+  const API = import.meta.env.VITE_API_BASE_URL;
 
 const images = [
-  "http://localhost:3000/images/HeroSection/1.jpg",
-  "http://localhost:3000/images/HeroSection/2.jpg",
-  "http://localhost:3000/images/HeroSection/1.1.jpg",
-  "http://localhost:3000/images/HeroSection/3.jpg",
-  "http://localhost:3000/images/HeroSection/4.jpg",
-  "http://localhost:3000/images/HeroSection/5.jpg",
-  "http://localhost:3000/images/HeroSection/6.jpg",
-  "http://localhost:3000/images/HeroSection/6.1.jpg",
-  "http://localhost:3000/images/HeroSection/7.jpg",
-  "http://localhost:3000/images/HeroSection/8.jpg",
-  "http://localhost:3000/images/HeroSection/9.jpg",
-  "http://localhost:3000/images/HeroSection/10.jpg",
-  "http://localhost:3000/images/HeroSection/11.jpg",
-  "http://localhost:3000/images/HeroSection/12.jpg",
+  `${API}/images/HeroSection/1.jpg`,
+  `${API}/images/HeroSection/2.jpg`,
+  `${API}/images/HeroSection/1.1.jpg`,
+  `${API}/images/HeroSection/3.jpg`,
+  `${API}/images/HeroSection/4.jpg`,
+  `${API}/images/HeroSection/5.jpg`,
+  `${API}/images/HeroSection/6.jpg`,
+  `${API}/images/HeroSection/6.1.jpg`,
+  `${API}/images/HeroSection/7.jpg`,
+  `${API}/images/HeroSection/8.jpg`,
+  `${API}/images/HeroSection/9.jpg`,
+  `${API}/images/HeroSection/10.jpg`,
+  `${API}/images/HeroSection/11.jpg`,
+  `${API}/images/HeroSection/12.jpg`,
 ];
 
   const [current, setCurrent] = useState(0);
@@ -139,3 +124,46 @@ const images = [
   );
 }
 
+
+
+
+
+
+  // ||
+  // process.env.REACT_APP_API_URL;
+
+
+  //  const images = [
+  //    "/HeroSection/2.jpg",
+  //    "/HeroSection/1.jpg",
+  //    "/HeroSection/1.1.jpg",
+  //   "/HeroSection/3.jpg",
+  //   "/HeroSection/4.jpg",
+  //   "/HeroSection/5.jpg",
+  //   "/HeroSection/6.jpg",
+  //   "/HeroSection/6.1.jpg",
+  //   "/HeroSection/7.jpg",
+  //   "/HeroSection/8.jpg",
+  //   "/HeroSection/9.jpg",
+  //   "/HeroSection/10.jpg",
+  //   "/HeroSection/11.jpg",
+  //   "/HeroSection/12.jpg",
+   
+  // ];
+
+// const images = [
+//   "http://localhost:3000/images/HeroSection/1.jpg",
+//   "http://localhost:3000/images/HeroSection/2.jpg",
+//   "http://localhost:3000/images/HeroSection/1.1.jpg",
+//   "http://localhost:3000/images/HeroSection/3.jpg",
+//   "http://localhost:3000/images/HeroSection/4.jpg",
+//   "http://localhost:3000/images/HeroSection/5.jpg",
+//   "http://localhost:3000/images/HeroSection/6.jpg",
+//   "http://localhost:3000/images/HeroSection/6.1.jpg",
+//   "http://localhost:3000/images/HeroSection/7.jpg",
+//   "http://localhost:3000/images/HeroSection/8.jpg",
+//   "http://localhost:3000/images/HeroSection/9.jpg",
+//   "http://localhost:3000/images/HeroSection/10.jpg",
+//   "http://localhost:3000/images/HeroSection/11.jpg",
+//   "http://localhost:3000/images/HeroSection/12.jpg",
+// ];
