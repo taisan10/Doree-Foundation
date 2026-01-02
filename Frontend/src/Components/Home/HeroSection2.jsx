@@ -76,7 +76,7 @@ const images = [
   <div className="md:w-5 md:h-5 md:-ml-2  lg:w-5 lg:h-5 lg:-ml-22 lg:mt-3 bg-orange-500 rounded-full animate-pulse "></div>
 
   {/* Text */}
-<span className="text-gray-700 font-medium tracking-wide text-xl animate-tilt lg:-ml-21">
+<span className="text-gray-700 font-medium tracking-wide text-xl animate-pulse lg:-ml-21">
   {/* Scroll For More */}
      {t("hero.scrollText")}
 </span>

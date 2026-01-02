@@ -5,36 +5,27 @@ import { useTranslation } from "react-i18next";
 
 const images = [
   {
-    img: "/HeroSection/Hero1.png",
+    img: "/HelpChildren/Computer.jpg",
     title: "बच्चों की शिक्षा का समर्थन करें",
     subtitle: "उन्हें स्कूल में बनाए रखने में मदद करें",
   },
 
   {
-    img: "/HeroSection/Hero3.png",
+  img: "/HelpChildren/Silayi.jpg",
     title: "बच्चों को वापस स्कूल भेजें",
     subtitle: "उनकी सीखने की यात्रा का समर्थन करें",
   },
   {
-    img: "/HeroSection/Hero4.png",
+    img: "/HelpChildren/Plant.jpg",
     title: "उम्मीद की एक डोर",
     subtitle: "आशा और अवसर प्रदान करें",
   },
   {
-    img: "/HeroSection/Hero5.png",
+    img: "/HelpChildren/Theory.jpg",
     title: "बच्चों के लिए उज्ज्वल भविष्य",
     subtitle: "स्थायी प्रभाव पैदा करें",
   },
-  {
-    img: "/HeroSection/Hero6.png",
-    title: "युवा दिमागों को सशक्त करें",
-    subtitle: "उनकी शिक्षा को मजबूत करें",
-  },
-  {
-    img: "/HeroSection/Hero2.png",
-    title: "पूरी पढ़ाई, देश की भलाई",
-    subtitle: "लड़कियों को अपनी शिक्षा पूरी करने में मदद करें",
-  },
+  
 ];
    
 export default function ChildrenSupportSection() {
