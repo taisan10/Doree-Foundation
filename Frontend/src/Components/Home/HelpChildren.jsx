@@ -5,23 +5,23 @@ import { useTranslation } from "react-i18next";
 
 const images = [
   {
-    img: "/HelpChildren/Computer.jpg",
+    img: "/Home/HelpChildren/Computer.jpg",
     title: "बच्चों की शिक्षा का समर्थन करें",
     subtitle: "उन्हें स्कूल में बनाए रखने में मदद करें",
   },
 
   {
-  img: "/HelpChildren/Silayi.jpg",
+  img: "/Home/HelpChildren/Silayi.jpg",
     title: "बच्चों को वापस स्कूल भेजें",
     subtitle: "उनकी सीखने की यात्रा का समर्थन करें",
   },
   {
-    img: "/HelpChildren/Plant.jpg",
+    img: "/Home/HelpChildren/Plant.jpg",
     title: "उम्मीद की एक डोर",
     subtitle: "आशा और अवसर प्रदान करें",
   },
   {
-    img: "/HelpChildren/Theory.jpg",
+    img: "/Home/HelpChildren/Theory.jpg",
     title: "बच्चों के लिए उज्ज्वल भविष्य",
     subtitle: "स्थायी प्रभाव पैदा करें",
   },

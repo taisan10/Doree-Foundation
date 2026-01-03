@@ -13,7 +13,7 @@ export default function InspirationSection() {
         {/* IMAGE */}
         <div className="border-[6px] border-orange-300 rounded-xl overflow-hidden">
           <img
-            src="/HeroSection/Hero1.png"
+            src="/Home/HeroSection/Hero1.png"
             alt="Inspiration"
             className="w-full object-cover"   
           />

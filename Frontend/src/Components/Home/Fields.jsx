@@ -3,8 +3,8 @@ import { PrimaryButton } from "../UI/UiComponent";
 const fields = [
   {
     title: "शिक्षा",
-    icon: "/Icons/Education.png",
-    image: "/HeroSection/Hero1.png",
+    icon: "/Home/Icons/Education.png",
+    image: "/Home/HeroSection/Hero1.png",
     headline: "शिक्षा की रक्षा, भविष्य की रक्षा!",
     description:
       "प्रारंभिक बचपन से किशोरावस्था तक, गुणवत्तापूर्ण शिक्षा मानव क्षमता को उजागर करती है। सुरक्षित कक्षाएँ, लड़कियों की भागीदारी, डिजिटल पहुँच — हमारे हस्तक्षेप पूरे भारत में बाधाओं को दूर करते हैं।",
@@ -12,8 +12,8 @@ const fields = [
   },
   {
     title: "स्वास्थ्य",
-    icon: "/Icons/Health.png",
-    image: "/HeroSection/Hero3.png",
+    icon: "/Home/Icons/Health.png",
+    image: "/Home/HeroSection/Hero3.png",
     headline: "आरोग्य की रक्षा, भविष्य की रक्षा!",
     description:
       "हम बच्चों के लिए स्वास्थ्य और पोषण की गारंटी जागरूकता अभियानों, प्रणाली सुदृढ़ीकरण और स्वास्थ्य मंत्रालय व नीति आयोग के साथ साझेदारी के माध्यम से देते हैं।",
@@ -21,8 +21,8 @@ const fields = [
   },
   {
     title: "लचीलापन",
-    icon: "/Icons/Resilience.png",
-    image: "/HeroSection/Hero4.png",
+    icon: "/Home/Icons/Resilience.png",
+    image: "/Home/HeroSection/Hero4.png",
     headline: "कल के लिए लचीलापन निर्माण",
     description:
       "बच्चों और समुदायों को जलवायु जागरूकता, आपदा तैयारी और भावनात्मक शक्ति के माध्यम से अनुकूलन और प्रगति करने के लिए सशक्त बनाना।",
@@ -30,8 +30,8 @@ const fields = [
   },
   {
     title: "जीविका",
-    icon: "/Icons/Livelihood.png",
-    image: "/HeroSection/Hero5.png",
+    icon: "/Home/Icons/Livelihood.png",
+    image: "/Home/HeroSection/Hero5.png",
     headline: "परिवारों के लिए आजीविका सुनिश्चित करना",
     description:
       "कौशल विकास, व्यावसायिक प्रशिक्षण और नियुक्ति सहयोग के माध्यम से परिवारों को ऊपर उठाना और सतत आय सुनिश्चित करना।",
@@ -39,8 +39,8 @@ const fields = [
   },
   {
     title: "संरक्षण",
-    icon: "/Icons/Security.png",
-    image: "/HeroSection/Hero6.png",
+    icon: "/Home/Icons/Security.png",
+    image: "/Home/HeroSection/Hero6.png",
     headline: "हर बच्चे के लिए सुरक्षा और संरक्षण",
     description:
       "हम सुरक्षित स्थान बनाते हैं, दुर्व्यवहार रोकते हैं और कानूनी व सामुदायिक हस्तक्षेपों के माध्यम से बाल अधिकारों की वकालत करते हैं।",
@@ -48,8 +48,8 @@ const fields = [
   },
   {
     title: "मानवीय सहायता",
-    icon: "/Icons/Human.png",
-    image: "/HeroSection/Hero2.png",
+    icon: "/Home/Icons/Human.png",
+    image: "/Home/HeroSection/Hero2.png",
     headline: "गरिमा के साथ मानवीय सहायता",
     description:
       "आपात स्थितियों के दौरान त्वरित प्रतिक्रिया — भोजन, आश्रय, शिक्षा की निरंतरता — गरिमा और देखभाल के साथ।",

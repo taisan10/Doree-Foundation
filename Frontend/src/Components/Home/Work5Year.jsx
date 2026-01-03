@@ -8,7 +8,7 @@ const impactData = [
   desc: "Support • Serve • Uplift",
     count: 5000,
     color: "bg-pink-100",
-    icon: "/Icons/Health1.png"
+    icon: "/Home/Icons/Health1.png"
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const impactData = [
   desc: "Study • Shine • Progress",
     count: 20000,
     color: "bg-teal-100",
-    icon: "/Icons/Education.png"
+    icon: "/Home/Icons/Education.png"
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const impactData = [
      desc: "Learn • Lead • Grow",
     count: 10000,
     color: "bg-orange-300",
-    icon: "/Icons/Human.png"
+    icon: "/Home/Icons/Human.png"
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const impactData = [
   desc: "Plant • Protect • Preserve",
     count: 12000,
     color: "bg-green-100",
-    icon: "/Icons/Security1.png"
+    icon: "/Home/Icons/Security1.png"
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const impactData = [
   desc: "Reduce • Reuse • Respect",
     count: 250,
     color: "bg-yellow-100",
-    icon: "/Icons/Education1.png"
+    icon: "/Home/Icons/Education1.png"
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ const impactData = [
      desc:"Skills • Jobs • Growth",
     count: 15000,
     color: "bg-purple-100",
-    icon: "/Icons/Education2.png"
+    icon: "/Home/Icons/Education2.png"
   }
 ];
 

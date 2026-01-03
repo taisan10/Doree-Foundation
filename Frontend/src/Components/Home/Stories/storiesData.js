@@ -7,7 +7,7 @@ export const storiesData = [
     bgColor: "bg-pink-100",
     // buttonText: "Read More",
     videoId: "dQw4w9WgXcQ", // YouTube video ID
-    thumbnail: "/Icons/Educatin.png"
+    thumbnail: "/Home/Icons/Educatin.png"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const storiesData = [
     bgColor: "bg-green-100",
     // buttonText: "Read More",
     videoId: "9bZkp7q19f0",
-    thumbnail: "/Icons/Livelihood.png"
+    thumbnail: "/Home/Icons/Livelihood.png"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const storiesData = [
     bgColor: "bg-blue-100",
     buttonText: "Read More",
     videoId: "3JZ_D3ELwOQ",
-    thumbnail: "/Icons/Resilienc.png"
+    thumbnail: "/Home/Icons/Resilienc.png"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const storiesData = [
     bgColor: "bg-yellow-100",
     buttonText: "Read More",
     videoId: "L_jWHffIx5E",
-    thumbnail: "/Icons/Security.png"
+    thumbnail: "/Home/Icons/Security.png"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const storiesData = [
     bgColor: "bg-purple-100",
     buttonText: "Read More",
     videoId: "Zi_XLOBDo_Y",
-    thumbnail: "/Icons/Security1.png"
+    thumbnail: "/Home/Icons/Security1.png"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const storiesData = [
     bgColor: "bg-red-100",
     buttonText: "Read More",
     videoId: "fJ9rUzIMcZQ",
-    thumbnail: "/Icons/Education.png"
+    thumbnail: "/Home/Icons/Education.png"
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export const storiesData = [
     bgColor: "bg-indigo-100",
     buttonText: "Read More",
     videoId: "kJQP7kiw5Fk",
-    thumbnail: "/Icons/Human2.png"
+    thumbnail: "/Home/Icons/Human2.png"
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const storiesData = [
     bgColor: "bg-teal-100",
     buttonText: "Read More",
     videoId: "hTWKbfoikeg",
-    thumbnail: "/Icons/Health.png"
+    thumbnail: "/Home/Icons/Health.png"
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const storiesData = [
     bgColor: "bg-orange-100",
     buttonText: "Read More",
     videoId: "YqeW9_5kURI",
-    thumbnail: "/Icons/Education2.png"
+    thumbnail: "/Home/Icons/Education2.png"
   },
   {
     id: 10,
@@ -97,6 +97,6 @@ export const storiesData = [
     bgColor: "bg-gray-100",
     buttonText: "Read More",
     videoId: "2Vv-BfVoq4g",
-    thumbnail: "/Icons/Education2.png"
+    thumbnail: "/Home/Icons/Education2.png"
   }
 ];

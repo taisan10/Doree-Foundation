@@ -98,7 +98,7 @@ import { PrimaryButton } from "../UI/UiComponent";
 const cardData = [
   {
     title: "शिक्षा",
-    gif: "/GIf/Education.png",
+    gif: "/Home/GIf/Education.png",
     description:
       "सुनिश्चित करना कि बच्चे स्कूल जाएँ और अपनी शिक्षा पूरी करें।",
     button: "और पढ़ें",
@@ -106,7 +106,7 @@ const cardData = [
   },
   {
     title: "स्वास्थ्य और पोषण",
-    gif: "/GIf/Health.png",
+    gif: "/Home/GIf/Health.png",
     description:
       "बढ़ते बच्चों को पौष्टिक भोजन और स्वास्थ्य सहयोग प्रदान करना।",
     button: "और पढ़ें",
@@ -114,7 +114,7 @@ const cardData = [
   },
   {
     title: "सुरक्षा और संरक्षण",
-    gif: "/GIf/Safety1.png",
+    gif: "/Home/GIf/Safety1.png",
     description:
       "सुरक्षित वातावरण बनाना और बच्चों को हानि से बचाना।",
     button: "और पढ़ें",
@@ -122,7 +122,7 @@ const cardData = [
   },
   {
     title: "बच्चों की भागीदारी",
-    gif: "/GIf/Children.png",
+    gif: "/Home/GIf/Children.png",
     description:
       "बच्चों को स्वयं को व्यक्त करने और निर्णयों का हिस्सा बनने के लिए सशक्त करना।",
     button: "और पढ़ें",

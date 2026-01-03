@@ -33,7 +33,7 @@ export function Container({ children, className = "" }) {
 }
 
 export function Logo({
-  src = "/logo/Doree.png", // default logo path
+  src = "/Home/logo/Doree.png", // default logo path
   alt = "Doree Foundation", // accessibility text
   size = "lg", // sm, md, lg
   link = "/", // optional link
