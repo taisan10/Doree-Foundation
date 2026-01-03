@@ -19,7 +19,7 @@ const people = [
     "B.Com",
     "M.Com (Economics)",
     "M.Com (Accountancy)",
-    "L.L.B.",
+    "LL.B.",
     "MBA (HR)"
   ]
 },
