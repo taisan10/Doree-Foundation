@@ -9,13 +9,20 @@ const people = [
     about:
       "Neha leads corporate volunteering initiatives, creating impactful programs that empower communities and drive sustained engagement."
   },
-  {
-    name: "Adv. Rajat Garg",
-    role: "Finance Department,Doree Foundation",
-    image: "/About/Team/Rajat_Sir.jpg",
-    about:
-      "Currently the Executive Director of Bhumi, Vaishnavi holds Master degrees in Development Management and Holistic Education. She leads Bhumi’s Fellowship programme and believes strongly in collaboration."
-  },
+{
+  name: "Adv. Rajat Garg",
+  role: "Finance Department, Doree Foundation",
+  image: "/About/Team/Rajat_Sir.jpg",
+  about:
+    "Adv. Rajat Garg is currently leading the Finance Department at Doree Foundation. He ensures financial transparency, planning and sustainable growth.",
+  qualifications: [
+    "B.Com",
+    "M.Com (Economics)",
+    "M.Com (Accountancy)",
+    "L.L.B.",
+    "MBA (HR)"
+  ]
+},
   
   {
     name: "Vivek Agrawal",
@@ -57,9 +64,20 @@ export default function TeamSlider() {
             {main.role}
           </p>
 
-          <p className="text-gray-600 leading-relaxed">
-            {main.about}
-          </p>
+       <p className="text-gray-600 leading-relaxed">
+  {main.about}
+</p>
+
+<p className="mt-3 font-semibold text-gray-900">
+  Qualifications:
+</p>
+
+<ul className="list-disc pl-6 text-gray-700">
+  {main.qualifications?.map((q, i) => (
+    <li key={i} className="font-bold">{q}</li>
+  ))}
+</ul>
+
 
           <div className="mt-auto flex gap-4">
             <button
