@@ -16,7 +16,7 @@ const impactData = [
   desc: "Study • Shine • Progress",
     count: 20000,
     color: "bg-teal-100",
-    icon: "/Home/Icons/Education.png"
+   icon: "/Home/Work5Year/Education11.png"
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const impactData = [
      desc: "Learn • Lead • Grow",
     count: 10000,
     color: "bg-orange-300",
-    icon: "/Home/Icons/Human.png"
+   icon: "/Home/Work5Year/Women10.png"
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const impactData = [
   desc: "Plant • Protect • Preserve",
     count: 12000,
     color: "bg-green-100",
-    icon: "/Home/Icons/Security1.png"
+    icon: "/Home/Work5Year/Plant1.png"
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const impactData = [
   desc: "Reduce • Reuse • Respect",
     count: 250,
     color: "bg-yellow-100",
-    icon: "/Home/Icons/Education1.png"
+    icon: "/Home/Work5Year/No-Plastic10.png"
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ const impactData = [
      desc:"Skills • Jobs • Growth",
     count: 15000,
     color: "bg-purple-100",
-    icon: "/Home/Icons/Education2.png"
+   icon: "/Home/Work5Year/Employement10.png"
   }
 ];
 
@@ -95,7 +95,7 @@ export default function Work5YearSection() {
         </div>
 
         {/* Right Side */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 lg:-ml-10 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 lg:-ml-5 ">
           {impactData.map((item) => (
             <div
               key={item.id}
