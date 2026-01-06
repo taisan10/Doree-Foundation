@@ -47,13 +47,13 @@ const slides = t("childrenSupport.slides", { returnObjects: true });
             {t("childrenSupport.headline")}
           </h3>
 
-          <p className="text-gray-600 text-lg mt-4 leading-relaxed">
+          <div className="text-gray-600 text-lg mt-4 leading-relaxed">
 {t("childrenSupport.paragraph", { returnObjects: true }).map((line, idx) => (
   <p key={idx}>{line}</p>
 ))}
 
 
-          </p>
+          </div>
 
           <PrimaryButton className="mt-6 text-white px-6 py-4 rounded-lg font-semibold shadow-md rounded-full">
             {t("childrenSupport.cta")}
@@ -65,7 +65,7 @@ const slides = t("childrenSupport.slides", { returnObjects: true });
           {/* ARROWS – Same Your Position */}
           <button
             onClick={prevSlide}
-            className="absolute top-50 md:top-40 -translate-y-1/2 left-[-24px] z-10 
+            className="absolute top-50 md:top-41 -translate-y-1/2 left-[-24px] z-10 
                        bg-white w-12 h-12 rounded-full shadow-md flex items-center justify-center 
                        hover:bg-gray-100 transition"
           >
