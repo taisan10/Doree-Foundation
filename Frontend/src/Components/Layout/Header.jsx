@@ -118,7 +118,7 @@ return (
     className="border bg-gray-800 text-white rounded px-2 py-1 text-sm"
   >
     <option value="hi">हिंदी</option>
-    <option value="mr">मराठी</option>
+   <option value="wp">ChatApp Language</option>
     <option value="pa">ਪੰਜਾਬੀ</option>
     <option value="en">English</option>
   </select>

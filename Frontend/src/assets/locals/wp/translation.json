@@ -29,14 +29,14 @@
     "cta": "Registration Now",
     "scrollText": "Scroll For More"
   },
-
- "childrenSupport": {
-  "headline": "What does the journey of learning look like?",
+"childrenSupport": {
+  "headline": "Yahan seekh ka safar kaisa hota hai?",
   "paragraph": [
-    "We don’t just teach children — we help them understand, think, share, and work together.",
-    "Through classes, activities, games, workshops, and mentoring,\nchildren develop confidence, discipline, communication, and essential life skills."
+
+  "Hum bachchon ko sirf padhate nahi — unhe samajhna, sochna, share karna aur mil-jul kar kaam karna bhi sikhate hain.",
+  " Classes ke saath-saath activities, games, workshops aur mentoring ke through\nbachche confidence, discipline, communication aur life-skills develop karte hain."
   ],
-  "cta": "Support a brighter future",
+  "cta": "Support for a brighter future",
 
   "slides": [
     {
@@ -44,16 +44,16 @@
       "subtitle": "Practical learning, real digital confidence."
     },
     {
-      "title": "Crafting your identity with your own hands.",
-      "subtitle": "From learning skills to creating livelihood — a journey of transformation."
+      "title": "Apne haathon se apni pehchaan.",
+      "subtitle": "Seekh se rozgaar tak — ek badlav bhari yatra."
     },
     {
-      "title": "Together, let’s build a green future.",
-      "subtitle": "Protecting nature is everyone’s responsibility."
+      "title": "Sab milkar banayein ek green future.",
+      "subtitle": "Prakriti ko bachana hum sabki zimmedari hai."
     },
     {
-      "title": "Soft Skills — lifelong companions.",
-      "subtitle": "Learning every day, growing every day."
+      "title": "Soft Skills — zindagi bhar ka saathi.",
+      "subtitle": "Har din seekhna, har din grow karna"
     }
   ]
 },

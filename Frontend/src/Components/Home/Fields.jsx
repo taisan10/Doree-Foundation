@@ -3,16 +3,16 @@ import { PrimaryButton } from "../UI/UiComponent";
 const fields = [
   {
     title: "शिक्षा",
-    icon: "/Home/Icons/Education.png",
+    icon: "/Home/Field-Work/Education11.png",
     image: "/Home/HeroSection/Hero1.png",
     headline: "शिक्षा की रक्षा, भविष्य की रक्षा!",
     description:
-      "प्रारंभिक बचपन से किशोरावस्था तक, गुणवत्तापूर्ण शिक्षा मानव क्षमता को उजागर करती है। सुरक्षित कक्षाएँ, लड़कियों की भागीदारी, डिजिटल पहुँच — हमारे हस्तक्षेप पूरे भारत में बाधाओं को दूर करते हैं।",
+      "प्रारंभिक बचपन से किशोरावस्था तक, गुणवत्तापूर्ण शिक्षा मानव क्षमता को उजागर करती है। सुरक्षित कक्षाएँ,     लड़कियों की भागीदारी, डिजिटल पहुँच — हमारे हस्तक्षेप पूरे भारत में बाधाओं को दूर करते हैं।",
     button: "और जानें",
   },
   {
     title: "स्वास्थ्य",
-    icon: "/Home/Icons/Health.png",
+    icon: "/Home/Field-Work/Plant1.png",
     image: "/Home/HeroSection/Hero3.png",
     headline: "आरोग्य की रक्षा, भविष्य की रक्षा!",
     description:
@@ -21,7 +21,8 @@ const fields = [
   },
   {
     title: "लचीलापन",
-    icon: "/Home/Icons/Resilience.png",
+    // icon: "/Home/Fileld-Work/Women2.jpg",
+    icon: "/Home/Field-Work/Women10.png",
     image: "/Home/HeroSection/Hero4.png",
     headline: "कल के लिए लचीलापन निर्माण",
     description:
@@ -30,7 +31,8 @@ const fields = [
   },
   {
     title: "जीविका",
-    icon: "/Home/Icons/Livelihood.png",
+    // icon: "/Home/Field-Work/Employement.jpg",
+     icon: "/Home/Field-Work/Employement10.png",
     image: "/Home/HeroSection/Hero5.png",
     headline: "परिवारों के लिए आजीविका सुनिश्चित करना",
     description:
@@ -39,22 +41,22 @@ const fields = [
   },
   {
     title: "संरक्षण",
-    icon: "/Home/Icons/Security.png",
+     icon: "/Home/Field-Work/No-Plastic10.png",
     image: "/Home/HeroSection/Hero6.png",
     headline: "हर बच्चे के लिए सुरक्षा और संरक्षण",
     description:
       "हम सुरक्षित स्थान बनाते हैं, दुर्व्यवहार रोकते हैं और कानूनी व सामुदायिक हस्तक्षेपों के माध्यम से बाल अधिकारों की वकालत करते हैं।",
     button: "और जानें",
   },
-  {
-    title: "मानवीय सहायता",
-    icon: "/Home/Icons/Human.png",
-    image: "/Home/HeroSection/Hero2.png",
-    headline: "गरिमा के साथ मानवीय सहायता",
-    description:
-      "आपात स्थितियों के दौरान त्वरित प्रतिक्रिया — भोजन, आश्रय, शिक्षा की निरंतरता — गरिमा और देखभाल के साथ।",
-    button: "और जानें",
-  },
+  // {
+  //   title: "मानवीय सहायता",
+  //   icon: "/Home/Icons/Human.png",
+  //   image: "/Home/HeroSection/Hero2.png",
+  //   headline: "गरिमा के साथ मानवीय सहायता",
+  //   description:
+  //     "आपात स्थितियों के दौरान त्वरित प्रतिक्रिया — भोजन, आश्रय, शिक्षा की निरंतरता — गरिमा और देखभाल के साथ।",
+  //   button: "और जानें",
+  // },
 ];
 
 
@@ -78,7 +80,7 @@ export default function FieldsOfWorkSection() {
             <img
               src={field.icon}
               alt={field.title}
-              className="w-24 h-24 mb-2 transition-transform group-hover:scale-110"
+              className="w-27 h-27 mb-2 transition-transform group-hover:scale-110"
             />
             <span className="text-sm font-medium text-gray-700">
               {field.title}

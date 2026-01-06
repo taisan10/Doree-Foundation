@@ -2,10 +2,10 @@ export const storiesData = [
   {
     id: 1,
     title: "Education for All",
-    // Altitle: "Education for All",
+    Altitle: "Education for All",
     description: "Quality education unlocks human potential. Discover how React revolutionizes UI development with its component-based architecture and declarative paradigm...",
     bgColor: "bg-pink-100",
-    // buttonText: "Read More",
+    buttonText: "Read More",
     videoId: "dQw4w9WgXcQ", // YouTube video ID
     thumbnail: "/Home/Icons/Educatin.png"
   },
@@ -15,7 +15,7 @@ export const storiesData = [
     Altitle: "Health & Nutrition",
     description: "Ensuring nutritious food and healthcare. Discover how React revolutionizes UI development with its component-based architecture and declarative paradigm...",
     bgColor: "bg-green-100",
-    // buttonText: "Read More",
+    buttonText: "Read More",
     videoId: "9bZkp7q19f0",
     thumbnail: "/Home/Icons/Livelihood.png"
   },

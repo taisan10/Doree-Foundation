@@ -100,7 +100,7 @@ export default function TeamSlider() {
 //       </div>
 
 
-<section className="w-full max-w-7xl mx-auto px-4 py-10 grid gap-8 lg:grid-cols-5">
+<section className="w-full max-w-7xl mx-auto px-4 py-10 grid gap-8 lg:grid-cols-5  -mt-20">
   {/* MAIN CARD */}
   <div className="
       lg:col-span-3 bg-orange-50 rounded-3xl 
