@@ -65,7 +65,7 @@ const slides = t("childrenSupport.slides", { returnObjects: true });
           {/* ARROWS – Same Your Position */}
           <button
             onClick={prevSlide}
-            className="absolute top-40 -translate-y-1/2 left-[-24px] z-10 
+            className="absolute top-50 md:top-40 -translate-y-1/2 left-[-24px] z-10 
                        bg-white w-12 h-12 rounded-full shadow-md flex items-center justify-center 
                        hover:bg-gray-100 transition"
           >
@@ -74,7 +74,7 @@ const slides = t("childrenSupport.slides", { returnObjects: true });
 
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 helpchildren-ChevronRight -translate-y-1/2 left-[-24px] z-10 
+            className="absolute top-65 md:top-1/2 helpchildren-ChevronRight -translate-y-1/2 left-[-24px] z-10 
                        bg-white w-12 h-12 rounded-full shadow-md flex items-center justify-center 
                        hover:bg-gray-100 transition"
           >
