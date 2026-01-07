@@ -3,32 +3,46 @@ export default function VisionMission() {
     <section className="w-full max-w-7xl mx-auto py-14 px-6 lg:px- place-items-center">
 
       {/* ROW 1 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 mb-10 sm:mb-0 w-110 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 mb-10 sm:mb-0 w-110 sm:w-full">
 
         {/* LEFT — TEXT */}
-        <div className="flex flex-col justify-center items-center bg-purple-200 p-10 h-80">
+        <div className="flex flex-col justify-center items-center bg-purple-200 p-10 h-80 sm:h-full">
           <h2 className="text-3xl font-bold text-center lg:text-left">
             Our Vision
           </h2>
 
           <p className="text-gray-800 text-lg mt-4 leading-relaxed text-center lg:text-left">
             Build a world in which every child has the right to survival,
-            protection, development, and participation.
+            protection,
+             development, and participation.
           </p>
         </div>
 
         {/* RIGHT — IMAGE */}
-        <div className="h-96">
-          <img
-            src="/About/VisionMission/Our Vision.jpg"
-            alt="Vision"
-             className="w-110 sm:w-full h-90 sm:h-full object-cover"
-          />
-        </div>
+        <div className="relative h-96">
+  <img
+    src="/About/VisionMission/Our Vision.jpg"
+    className="w-full h-full object-cover"
+  />
+
+  <div className="absolute inset-0 grid grid-cols-6 grid-rows-4">
+    {Array.from({ length: 24 }).map((_, i) => (
+      <div
+        key={i}
+        className={`w-[90px] h-[90px] 
+          ${i % 2 === 0 ? "bg-gray-200/30" : "bg-orange-200/30"}
+        `}
+      />
+    ))}
+  </div>
+</div>
+
+
+
       </div>
 
       {/* ROW 2 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-110">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-110 sm:w-full">
 
         {/* LEFT — IMAGE */}
         <div className="h-96 order-2 sm:order-1">
@@ -40,7 +54,7 @@ export default function VisionMission() {
         </div>
 
         {/* RIGHT — TEXT */}
-        <div className="flex flex-col order-1 justify-center bg-pink-200 p-10 h-80 ">
+        <div className="flex flex-col order-1 justify-center bg-pink-200 p-10 h-80 sm:h-full">
           <h2 className="text-3xl font-bold text-center lg:text-left">
             Our Mission
           </h2>
