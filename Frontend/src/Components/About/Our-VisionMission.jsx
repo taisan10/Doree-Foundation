@@ -30,7 +30,7 @@ export default function VisionMission() {
       <div
         key={i}
         className={`w-[90px] h-[90px] 
-          ${i % 2 === 0 ? "bg-gray-200/30" : "bg-orange-200/30"}
+          ${i % 2 === 0 ? "bg-gray-200/30" : "bg-orange-200/30 p-1"}
         `}
       />
     ))}
