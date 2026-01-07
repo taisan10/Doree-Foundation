@@ -1,6 +1,9 @@
 import Growth from "../Growth"
 import InspirationSection from "../Hero"
-import TeamSlider from "../TeamSlider"
+import TeamSlider from "../Main-member"
+import VisionMission from "../Our-VisionMission"
+import OurTeamSection from "../Team-member"
+
 
 
 
@@ -10,6 +13,8 @@ export function About(){
 <InspirationSection />
 <Growth />
 <TeamSlider />
+<OurTeamSection />
+<VisionMission />
 
 </div>
     
