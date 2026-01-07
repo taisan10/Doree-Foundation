@@ -13,7 +13,7 @@ export function About(){
 <InspirationSection />
 <Growth />
 <TeamSlider />
-<OurTeamSection />
+{/* <OurTeamSection /> */}
 <VisionMission />
 
 </div>
