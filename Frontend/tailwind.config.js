@@ -24,6 +24,22 @@ module.exports = {
         dash: "40px 100%",
       },
 
+      
+animation2: {
+  moveRight: "moveRight 6s linear infinite",
+  moveLeft: "moveLeft 6s linear infinite",
+},
+keyframes: {
+  moveRight: {
+    "0%": { transform: "translateX(0)" },
+    "100%": { transform: "translateX(500px)" },
+  },
+  moveLeft: {
+    "0%": { transform: "translateX(0)" },
+    "100%": { transform: "translateX(-500px)" },
+  },
+},
+
 
     },
   },
