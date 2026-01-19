@@ -90,7 +90,8 @@ export default function Work5YearSection() {
           </h2>
           <p className="text-gray-600 mb-6">April 2020 to March 2025</p>
           <div className="flex flex-col space-y-4">
-  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Community helping hands" className="w-full max-w-md rounded-xl shadow-md" />
+  <img   src="/Home/Work5Year/2025.jpg"
+alt="Community helping hands" className="w-full max-w-xl rounded-xl shadow-md h-70" />
 </div>
         </div>
 

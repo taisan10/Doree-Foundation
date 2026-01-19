@@ -2,7 +2,7 @@ export const journeyData = [
   {
     year: "1985",
     title: "Foundation Started",
-    desc: "Free food distribution for needy people.",
+    desc: "Free food distribution for needy people.Working towards international reachWorking towards international reach",
     image: "/About/Journey/1.png",
   },
   {
@@ -50,13 +50,13 @@ export const journeyData = [
   {
     year: "2023",
     title: "Global Vision",
-    desc: "Working towards international reach.",
+    desc: "Working towards international reach.Working towards international reachWorking towards international reach",
     image: "/About/Journey/6.png",
   },
   {
     year: "2025",
     title: "Global Vision",
-    desc: "Working towards international reach.",
+    desc: "Working towards international reach.Working towards international reachWorking towards international reachWorking towards international reach",
     image: "/About/Journey/6.png",
   },
 ];

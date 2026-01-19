@@ -15,8 +15,7 @@ export default function JourneyItem({ item }) {
       <div className="
         absolute inset-0 bg-white rounded-xl shadow-xl p-5
         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
-        transition-all duration-300
-      ">
+        transition-all duration-300">
         <h3 className="text-2xl font-bold text-cyan-400">
           {item.year}
         </h3>

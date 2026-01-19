@@ -4,45 +4,46 @@ const fields = [
   {
     title: "शिक्षा",
     icon: "/Home/Field-Work/Education11.png",
-    image: "/Home/HeroSection/Hero1.png",
+    image: "/Home/Field-Work/11/Education.jpg",
     headline: "शिक्षा की रक्षा, भविष्य की रक्षा!",
     description:
       "प्रारंभिक बचपन से किशोरावस्था तक, गुणवत्तापूर्ण शिक्षा मानव क्षमता को उजागर करती है। सुरक्षित कक्षाएँ,     लड़कियों की भागीदारी, डिजिटल पहुँच — हमारे हस्तक्षेप पूरे भारत में बाधाओं को दूर करते हैं।",
     button: "और जानें",
   },
   {
-    title: "स्वास्थ्य",
+    title: "वृक्षारोपण",
     icon: "/Home/Field-Work/Plant1.png",
-    image: "/Home/HeroSection/Hero3.png",
+    image: "/Home/Field-Work/11/Plant.jpg",
     headline: "आरोग्य की रक्षा, भविष्य की रक्षा!",
     description:
       "हम बच्चों के लिए स्वास्थ्य और पोषण की गारंटी जागरूकता अभियानों, प्रणाली सुदृढ़ीकरण और स्वास्थ्य मंत्रालय व नीति आयोग के साथ साझेदारी के माध्यम से देते हैं।",
     button: "और जानें",
   },
   {
-    title: "लचीलापन",
+    title: "नारी शक्ति",
     // icon: "/Home/Fileld-Work/Women2.jpg",
     icon: "/Home/Field-Work/Women10.png",
-    image: "/Home/HeroSection/Hero4.png",
+    image: "/Home/Field-Work/11/Women.jpg",
     headline: "कल के लिए लचीलापन निर्माण",
     description:
       "बच्चों और समुदायों को जलवायु जागरूकता, आपदा तैयारी और भावनात्मक शक्ति के माध्यम से अनुकूलन और प्रगति करने के लिए सशक्त बनाना।",
     button: "और जानें",
   },
   {
-    title: "जीविका",
+    title: "रोज़गार",
     // icon: "/Home/Field-Work/Employement.jpg",
      icon: "/Home/Field-Work/Employement10.png",
-    image: "/Home/HeroSection/Hero5.png",
+       image: "/Home/Field-Work/11/Placement.jpg",
     headline: "परिवारों के लिए आजीविका सुनिश्चित करना",
     description:
       "कौशल विकास, व्यावसायिक प्रशिक्षण और नियुक्ति सहयोग के माध्यम से परिवारों को ऊपर उठाना और सतत आय सुनिश्चित करना।",
     button: "और जानें",
   },
   {
-    title: "संरक्षण",
+    title: "प्लास्टिक मुक्त",
      icon: "/Home/Field-Work/No-Plastic10.png",
-    image: "/Home/HeroSection/Hero6.png",
+        image: "/Home/Field-Work/11/No-Plastic1.jpg",
+        // image: "/Home/Field-Work/11/No-Plastic3.jpg",
     headline: "हर बच्चे के लिए सुरक्षा और संरक्षण",
     description:
       "हम सुरक्षित स्थान बनाते हैं, दुर्व्यवहार रोकते हैं और कानूनी व सामुदायिक हस्तक्षेपों के माध्यम से बाल अधिकारों की वकालत करते हैं।",
