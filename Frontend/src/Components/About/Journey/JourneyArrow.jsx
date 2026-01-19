@@ -4,7 +4,7 @@ export default function JourneyArrow({ direction }) {
   if (direction === "down") {
     return (
       <div className="flex ">
-        <div className="relative h-14 w-1 bg-orange-400">
+        <div className="relative h-14 w-1 bg-blue-400">
           {/* Arrow Head */}
           <div className="absolute -bottom-2 left-1/3 -translate-x-1/2 
                           w-0 h-0 
@@ -19,7 +19,7 @@ export default function JourneyArrow({ direction }) {
   return (
     <div className="flex items-center">
       <div
-        className={`relative h-1 bg-orange-400 ${
+        className={`relative h-1 bg-sky-400 ${
           direction === "right" ? "w-10" : "w-10"
         }`}
       >
@@ -29,8 +29,8 @@ export default function JourneyArrow({ direction }) {
             w-0 h-0 
             ${
               direction === "right"
-                ? "right-0 border-t-6 border-b-6 border-l-8 border-t-transparent border-b-transparent border-l-orange-400"
-                : "left-0 border-t-6 border-b-6 border-r-8 border-t-transparent border-b-transparent border-r-orange-400"
+                ? "right-0 border-t-6 border-b-6 border-l-8 border-t-transparent border-b-transparent border-l-sky-400"
+                : "left-0 border-t-6 border-b-6 border-r-8 border-t-transparent border-b-transparent border-r-sky-400"
             }
           `}
         />
