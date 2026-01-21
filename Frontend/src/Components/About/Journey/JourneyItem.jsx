@@ -4,7 +4,7 @@ export default function JourneyItem({ item }) {
 
       {/* DEFAULT VIEW */}
       <img src={item.image} className="w-28 h-28 object-contain" />
-      <p className="text-cyan-400 text-2xl font-bold mt-3">
+      <p className="text-blue-900 text-2xl font-bold mt-3">
         {item.year}
       </p>
       <p className="font-semibold text-black text-center">
@@ -16,7 +16,7 @@ export default function JourneyItem({ item }) {
         absolute inset-0 bg-white rounded-xl shadow-xl p-5
         opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
         transition-all duration-300">
-        <h3 className="text-2xl font-bold text-cyan-400">
+        <h3 className="text-2xl font-bold text-blue-900">
           {item.year}
         </h3>
         <p className="font-semibold text-black mt-2">{item.title}</p>

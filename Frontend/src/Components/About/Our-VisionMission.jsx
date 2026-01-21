@@ -1,13 +1,18 @@
 export default function VisionMission() {
   return (
-    <section className="w-full max-w-7xl mx-auto py-14 px-6 lg:px- place-items-center">
-
+    <section className="w-full max-w-7xl mx-auto py-14 px-6 lg:px-10 place-items-center lg:-mt-20">
+ <div className="text-left  mb-10">
+    <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
+      Our Vision & Our Mission 
+    </h2>
+    <div className="w-full h-[3px] bg-orange-400  mt-3 rounded-full" />
+  </div>
       {/* ROW 1 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 mb-10 sm:mb-0 w-110 sm:w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 mb-10 sm:mb-0 w-85 sm:w-110 sm:w-full">
 
         {/* LEFT — TEXT */}
-        <div className="flex flex-col justify-center items-center bg-purple-200 p-10 h-80 sm:h-full">
-          <h2 className="text-3xl font-bold text-center lg:text-left">
+        <div className="flex flex-col justify-center   p-10 h-80 sm:h-full">
+          <h2 className="text-3xl font-bold text-left text-blue-900">
             Our Vision
           </h2>
 
@@ -29,7 +34,7 @@ export default function VisionMission() {
     {Array.from({ length: 24 }).map((_, i) => (
       <div
         key={i}
-        className={`w-[90px] h-[90px] 
+        className={`w-[57px] lg:w-[90px] h-[90px] 
           ${i % 2 === 0 ? "bg-gray-200/30" : "bg-orange-200/30 "}
         `}
       />
@@ -42,7 +47,7 @@ export default function VisionMission() {
       </div>
 
       {/* ROW 2 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-110 sm:w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-85 sm:w-110 sm:w-full">
 
         {/* LEFT — IMAGE */}
         <div className="h-96 order-2 sm:order-1">
@@ -54,8 +59,8 @@ export default function VisionMission() {
         </div>
 
         {/* RIGHT — TEXT */}
-        <div className="flex flex-col order-1 justify-center bg-pink-200 p-10 h-80 sm:h-full">
-          <h2 className="text-3xl font-bold text-center lg:text-left">
+        <div className="flex flex-col order-1 justify-center bg-b00 p-10 h-80 sm:h-full">
+          <h2 className="text-3xl font-bold text-center lg:text-left text-blue-900">
             Our Mission
           </h2>
 

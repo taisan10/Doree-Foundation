@@ -36,11 +36,11 @@ const people = [
     role: "Director, HR & Operations",
     image: "/About/Team/2.jpg",
     about:
-      "Vivek oversees operations and HR initiatives, ensuring scalable systems, strong governance and people-first culture."
+      " strong governance and people-first culture Vivek oversees operations and HR initiatives, ensuring scalable systems."
   },
   {
-    name: "Vivek Agrawal",
-    role: "Director, HR & Operations",
+    name: "Vikas Agrawal",
+    role: "Manager",
     image: "/About/Team/2.jpg",
     about:
       "Vivek oversees operations and HR initiatives, ensuring scalable systems, strong governance and people-first culture."
@@ -60,22 +60,22 @@ export default function TeamSlider() {
   return (
 
 
-<section>
+<section >
 {/* SECTION TITLE */}
 
 {/* SECTION TITLE */}
-  <div className="text-center mb-10">
-    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+  <div className="text-left ml-25 sm:ml-40 mb-10">
+    <h2 className="text-3xl md:text-4xl font-bold  text-blue-900">
       Our Team
     </h2>
-    <div className="w-20 h-[3px] bg-orange-400 mx-auto mt-3 rounded-full" />
+    <div className="w-40 h-[3px] bg-orange-400  mt-3 rounded-full" />
   </div>
   <div  className="w-full max-w-7xl mx-auto px-4 py-10 grid gap-8 lg:grid-cols-5  -mt-5">
 
   {/* MAIN CARD */}
 
   <div className="
-      lg:col-span-3 bg-orange-50 rounded-3xl 
+      lg:col-span-3 bg-gray-50 rounded-3xl 
       p-6 md:p-10 flex flex-col gap-6 shadow
       lg:flex-row
   ">
@@ -108,7 +108,7 @@ export default function TeamSlider() {
         </button>
       </div>
 
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+      <h2 className="text-2xl md:text-3xl font-bold  text-[#131271]">
         {main.name}
       </h2>
 
@@ -157,14 +157,14 @@ export default function TeamSlider() {
       {/* RIGHT SIDE PANEL - 40% */}
       <div className="hidden lg:flex  lg:col-span-2 flex flex-col gap-6">
         {/* TOP CARD */}
-        <div className="flex gap-4 items-center bg-orange-50 rounded-3xl p-4 shadow">
+        <div className="flex gap-4 items-center bg-white rounded-3xl p-4 shadow">
           <img
             src={sideTop.image}
             className="w-48 h-52 object-cover rounded-2xl"
             alt={sideTop.name}
           />
           <div>
-            <h4 className="text-lg font-bold text-orange-600">
+            <h4 className="text-lg font-bold text-blue-900">
               {sideTop.name}
             </h4>
             <p className="text-gray-700 text-sm">
@@ -174,14 +174,14 @@ export default function TeamSlider() {
         </div>
 
         {/* BOTTOM CARD */}
-        <div className="flex gap-4 items-center bg-orange-50 rounded-3xl p-4 shadow">
+        <div className="flex gap-4 items-center bg-white rounded-3xl p-4 shadow">
           <img
             src={sideBottom.image}
             className="w-48 h-52 object-cover rounded-2xl"
             alt={sideBottom.name}
           />
           <div>
-            <h4 className="text-lg font-bold text-orange-600">
+            <h4 className="text-lg font-bold text-blue-900">
               {sideBottom.name}
             </h4>
             <p className="text-gray-700 text-sm">

@@ -2,7 +2,7 @@ export default function InspirationSection() {
   return (
     <section className=" py-14 px-6 md:px-16 ">
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#154c79]">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-900">
         Inspiration - The story of Hope
       </h2>
 
@@ -13,9 +13,9 @@ export default function InspirationSection() {
         {/* IMAGE */}
         <div className="border-[6px] border-orange-300 rounded-xl overflow-hidden">
           <img
-            src="/Home/HeroSection/Hero1.png"
+            src="/About/HeroSection/Hero.jpg"
             alt="Inspiration"
-            className="w-full object-cover"   
+            className="w-full object-cover h-100"   
           />
         </div>
 

@@ -38,9 +38,11 @@ export default function OurTeamSection() {
 
   return (
     <section className="w-full bg-orange-900/90 py-12 md:py-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-10">
-        Our Team
-      </h2>
+    
+    <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">
+      Our Team
+    </h2>
+   
 
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-5 gap-10">
         {/* LEFT */}
