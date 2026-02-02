@@ -87,7 +87,7 @@ const images = [
         </div>
 
         {/* Right Side (60%) */}
-        <div className="w-full md:w-4/5 lg:w-5/5 md:mt-5 md:ml-5  lg:mt-5">
+        <div className="w-full md:w-4/5 lg:w-5/5 md:mt-5 md:ml-5  lg:mt-15">
           <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-xl ring-4 ring-orange-200 shadow-lg">
             
             {/* Slides */}

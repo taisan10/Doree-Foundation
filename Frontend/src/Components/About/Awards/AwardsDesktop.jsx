@@ -11,7 +11,7 @@ export default function Desktop(){
         
           <div className="max-w-7xl mx-auto px-4">
 
-<div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-14">
+<div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-1">
           {(showAll ? awardsData : awardsData.slice(0, 4)).map((award) => (
             <AwardsCard key={award.id} award={award} />
           ))}
@@ -21,7 +21,7 @@ export default function Desktop(){
         <div className="flex justify-center mt-14">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-8 py-3 rounded-full bg-yellow-400 text-gray-900 font-semibold hover:bg-yellow-500 transition"
+            className="px-8 py-3 rounded-full bg-[#f76b04] text-gray-100 font-semibold hover:bg-[#131271] transition"
           >
             {showAll ? "Show Less" : "See All Our Awards"}
           </button>

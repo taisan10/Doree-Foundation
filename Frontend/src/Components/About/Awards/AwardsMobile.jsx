@@ -2,6 +2,9 @@ import { useState } from "react";
 import { awardsData } from "./awardsData";
 
 export default function AwardsMobile() {
+
+  const mobileData = [...awardsData].reverse();
+
   const [index, setIndex] = useState(0);
 
   const prev = () => {
@@ -12,19 +15,19 @@ export default function AwardsMobile() {
     setIndex((p) => (p === awardsData.length - 1 ? 0 : p + 1));
   };
 
-  const item = awardsData[index];
+  const item = mobileData[index];
 
-  return (
+  return ( 
     <div className="max-w-sm mx-auto px-4">
       {/* CARD */}
       <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
         <img
           src={item.image}
           alt={item.title}
-          className="mx-auto h-24 object-contain"
+          className="mx-auto h-44 object-contain"
         />
 
-        <h3 className="mt-4 text-lg font-semibold text-gray-900">
+        <h3 className="mt-4 text-lg font-semibold text-[#131271]">
           {item.title}
         </h3>
 
@@ -32,7 +35,7 @@ export default function AwardsMobile() {
           {item.desc}
         </p>
 
-        <p className="mt-3 text-orange-500 font-bold">
+        <p className="mt-3 text-[#f76b01] font-bold">
           {item.year}
         </p>
       </div>
@@ -41,17 +44,17 @@ export default function AwardsMobile() {
       <div className="flex justify-between mt-6">
         <button
           onClick={prev}
-          className="px-5 py-2 rounded-full border border-orange-400 text-orange-500 font-semibold hover:bg-orange-50 transition"
+          className="px-5 py-2 rounded-full border border-[#f76b01] text-[#f76b01] font-semibold hover:bg-[#f76b01] hover:text-white  transtion"
         >
           Prev
         </button>
 
         <button
           onClick={next}
-          className="px-5 py-2 rounded-full bg-orange-400 text-white font-semibold hover:bg-orange-500 transition"
+          className="px-5 py-2 rounded-full bg-[#f76b01] text-white font-semibold hover:border border-[#f76b01] hover:text-[#f76b01] hover:bg-transparent transition"
         >
           Next
-        </button>
+        </button> 
       </div>
     </div>
   );

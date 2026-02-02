@@ -3,6 +3,7 @@
     "about": "About",
     "ourWork": "Our Work",
     "blogs": "Blogs",
+    "Who": "Whowe",
     "Work": "What We Do",
     "contact": "Contact",
 
@@ -15,11 +16,11 @@
     },
 
     "services": {
-      "service1": "Service One",
-      "service2": "Service Two",
-      "service3": "Service Three",
-      "service4": "Service Four",
-      "service5": "Service Five"
+      "service1": "Education",
+      "service2": "Plantation",
+      "service3": "Women Empowerment",
+      "service4": "Placement Drive",
+      "service5": "No Plastic Campaigns"
     }
   },
 

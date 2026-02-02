@@ -18,8 +18,8 @@ export default function VisionMission() {
 
           <p className="text-gray-800 text-lg mt-4 leading-relaxed text-center lg:text-left">
             Build a world in which every child has the right to survival,
-            protection,
-             development, and participation.
+            protection, development, and participation.
+             
           </p>
         </div>
 

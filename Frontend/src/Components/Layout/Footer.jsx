@@ -19,10 +19,10 @@ export default function Footer() {
           {/* Center: Navigation */}
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <h3 className="text-orange-500 font-semibold mb-2">Our Work</h3>
+              <h3 className="text-orange-500 font-semibold mb-2">Pages</h3>
               <ul className="space-y-1 text-sm text-gray-700">
-                <li><a href="/work/project1" className=" hover:text-orange-500">Project One</a></li>
-                <li><a href="/work/project2" className="hover:text-orange-500">Project Two</a></li>
+                <li><a href="http://localhost:5173/" className=" hover:text-orange-500">Home</a></li>
+                <li><a href="http://localhost:5173/about" className="hover:text-orange-500">About</a></li>
                 <li><a href="/work/project3" className="hover:text-orange-500">Project Three</a></li>
                 <li><a href="/work/project4" className="hover:text-orange-500">Project Four</a></li>
                 <li><a href="/work/project5" className="hover:text-orange-500">Project Five</a></li>
@@ -59,6 +59,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </footer> 
+    
   );
 }

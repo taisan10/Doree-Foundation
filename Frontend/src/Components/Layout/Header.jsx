@@ -65,6 +65,11 @@ return (
              {t("navbar.about")}
              
              </Link>
+            <Link to="/Who" className="text-gray-700 hover:text-orange-500">
+
+             {t("navbar.Who")}
+             
+             </Link>
 
             {/* Our Work dropdown */}
             <div
@@ -75,13 +80,13 @@ return (
               <button className="text-gray-700 hover:text-orange-500">{t("navbar.ourWork")}</button>
               {workDropdown && (
                 <div className="absolute bg-white shadow-md rounded-md mt-2 text-xl">
-                  <ul className="py-2 w-48">
+                  {/* <ul className="py-2 w-48">
                     <li><a href="/work/project1" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project1")}</a></li>
                     <li><a href="/work/project2" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project2")}</a></li>
                     <li><a href="/work/project3" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project3")}</a></li>
                     <li><a href="/work/project4" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project4")}</a></li>
                     <li><a href="/work/project5" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.projects.project5")}</a></li>
-                  </ul>
+                  </ul> */}
                 </div>
               )}
             </div>
@@ -94,17 +99,17 @@ return (
               onMouseEnter={handleMouseEnterDo}
               onMouseLeave={handleMouseLeaveDo}
             >
-              <button className="text-gray-700 hover:text-orange-500">      {t("navbar.Work")}
+              <button  className="text-gray-700 hover:text-orange-500">      {t("navbar.Work")}
 </button>
               {doDropdown && (
                 <div className="absolute bg-white shadow-md rounded-md text-xl mt-2">
-                  {/* <ul className="py-2 w-48">
+                  <ul className="py-2 w-48">
                     <li><a href="/do/service1" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service1")}</a></li>
                     <li><a href="/do/service2" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service2")}</a></li>
                     <li><a href="/do/service3" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service3")}</a></li>
                     <li><a href="/do/service4" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service4")}</a></li>
                     <li><a href="/do/service5" className="block px-4 py-2 text-gray-600 hover:text-orange-500">{t("navbar.services.service5")}</a></li>
-                  </ul> */}
+                  </ul>
                 </div>
               )}
             </div>
@@ -155,6 +160,11 @@ return (
         <div className="lg:hidden bg-white shadow-md">
           <ul className="flex flex-col space-y-2 px-4 py-3">
             <Link to="/about" className="block text-gray-700 hover:text-orange-500">{t("navbar.about")}</Link>
+            <Link to="/Who" className="text-gray-700 hover:text-orange-500">
+
+             {t("navbar.Who")}
+             
+             </Link>
             <li><a href="/blogs" className="block text-gray-700 hover:text-orange-500">{t("navbar.blogs")}</a></li>
            
 
@@ -187,11 +197,11 @@ return (
               </button>
               {doOpen && (
                 <ul className="ml-4 space-y-1 mt-1">
-                  {/* <li><a href="/do/service1" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service1")}</a></li>
+                  <li><a href="/do/service1" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service1")}</a></li>
                   <li><a href="/do/service2" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service2")}</a></li>
                   <li><a href="/do/service3" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service3")}</a></li>
                   <li><a href="/do/service4" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service4")}</a></li>
-                  <li><a href="/do/service5" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service5")}</a></li> */}
+                  <li><a href="/do/service5" className="block text-gray-600 hover:text-orange-500">{t("navbar.services.service5")}</a></li>
                 </ul>
               )}
             </li>
