@@ -39,7 +39,7 @@ const images = [
   }, [images.length]);
 
   return (
-    <section className="w-full max-w-8xl mx-auto px-6 lg:px-12 py-6 lg:py-12">
+    <section className="w-full max-w-8xl mx-auto px-6 lg:px-12 py-6 lg:py-12 ">
       <div className="flex flex-col  md:flex-row lg:flex-row items-center md:items-start lg:items-start lg:gap-8">
         
         {/* Left Side (40%) */}
