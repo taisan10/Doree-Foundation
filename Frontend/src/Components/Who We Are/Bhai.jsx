@@ -752,7 +752,7 @@ export default function HowWeWorkSection() {
           <p className="text-[#131271]/80 text-base md:text-lg leading-relaxed">
             Our approach is rooted in empathy, collaboration, and accountability —
             ensuring every initiative creates real and lasting impact.
-            
+            Our approach 
 
           </p>
         </div>
